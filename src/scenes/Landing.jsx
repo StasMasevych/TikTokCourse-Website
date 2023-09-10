@@ -3,8 +3,10 @@ import useMediaQuery from "../hooks/useMediaQuery";
 import { motion } from "framer-motion";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 
-const img =
-  "https://mail.google.com/mail/u/0?ui=2&ik=34e704a98e&attid=0.1&permmsgid=msg-a:r8694891675252838291&th=18a7a3c4c99c91a9&view=fimg&fur=ip&sz=s0-l75-ft&attbid=ANGjdJ_HyWUiKK8tLujWFpgvFZ7YnwWhFdnD-kydWIeM55IlXvm7W7d4DfgEYn9wK0ZXK2mWyNoPAcJ0qlkzic7qds5EMJrhrhmVSUPwmESLAyeZhv7b8N8wuecBiss&disp=emb&realattid=18a7a3c40c260d3e82c1";
+/* const img =
+  "https://mail.google.com/mail/u/0?ui=2&ik=34e704a98e&attid=0.1&permmsgid=msg-a:r8694891675252838291&th=18a7a3c4c99c91a9&view=fimg&fur=ip&sz=s0-l75-ft&attbid=ANGjdJ_HyWUiKK8tLujWFpgvFZ7YnwWhFdnD-kydWIeM55IlXvm7W7d4DfgEYn9wK0ZXK2mWyNoPAcJ0qlkzic7qds5EMJrhrhmVSUPwmESLAyeZhv7b8N8wuecBiss&disp=emb&realattid=18a7a3c40c260d3e82c1"; */
+
+import profileImg from "../assets/lera.png";
 
 const Landing = ({ setSelectedPage }) => {
   const isAboveLarge = useMediaQuery("(min-width: 1060px)");
@@ -23,14 +25,14 @@ const Landing = ({ setSelectedPage }) => {
             <img
               alt="profile"
               className="h-[36rem] hover:filter hover:saturate-150 transition duration-500 z-10 w-full max-w-[400px] md:max-w-[600px] rounded-lg"
-              src={img}
+              src={profileImg}
             />
           </div>
         ) : (
           <img
             alt="profile"
             className="z-10 w-full max-w-[400px] md:max-w-[600px] rounded-lg"
-            src={img}
+            src={profileImg}
           />
         )}
       </div>
