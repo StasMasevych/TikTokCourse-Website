@@ -60,7 +60,7 @@ const Landing = ({ setSelectedPage }) => {
             </span>
           </p>
 
-          <p className="mt-10 mb-7 text-sm text-center md:text-start">
+          <p className="mt-10 mb-7 text-lg text-center md:text-start">
             Навчу заробляти 2000$ з ТікТоку з 0❗️підписників та особисто
             допоможу вивести твоє кожне відео у РЕК!🔥
           </p>
