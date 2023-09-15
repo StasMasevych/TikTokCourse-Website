@@ -55,7 +55,7 @@ const Landing = ({ setSelectedPage }) => {
               <p>TikToker</p>
               <div
                 className="xxs:relative xxs:text-deep-blue xxs:font-semibold z-20 xxs:before:content-brush
-              before:absolute before:-left-[20px] before:-top-[80px] before:z-[-1] "
+              before:absolute before:-left-[45px] before:-top-[80px] before:z-[-1] xs: max-w-[120px]"
               >
                 Хома
               </div>
