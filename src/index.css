@@ -24,8 +24,7 @@ body,
 @media (max-width: 575.98px) {
   .hero__textblock {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-wrap: wrap;
   }
 }
 
