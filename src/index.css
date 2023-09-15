@@ -12,3 +12,12 @@ body,
   background-color: #010026;
   @apply text-white;
 }
+
+.free-consultation {
+  margin-top: 14px;
+}
+
+.free-consultation__description {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}

@@ -51,7 +51,7 @@ const Landing = ({ setSelectedPage }) => {
           }}
         >
           <p className="text-6xl font-playfair z-10 text-center md:text-start">
-            Лера {""}
+            TikToker {""}
             <span
               className="xs:relative xs:text-deep-blue xs:font-semibold z-20 xs:before:content-brush
               before:absolute before:-left-[25px] before:-top-[70px] before:z-[-1]"
@@ -61,8 +61,8 @@ const Landing = ({ setSelectedPage }) => {
           </p>
 
           <p className="mt-10 mb-7 text-sm text-center md:text-start">
-            Я для вас дещо маю! Це унікальний ТікТоК гайд, з яким ти станеш
-            зіркою в ТікТоці та навчишся заробляти 1000$ + 🤩
+            Навчу заробляти 2000$ з ТікТоку з 0❗️підписників та особисто
+            допоможу вивести твоє кожне відео у РЕК!🔥
           </p>
         </motion.div>
 
@@ -84,7 +84,7 @@ const Landing = ({ setSelectedPage }) => {
             onClick={() => setSelectedPage("contact")}
             href="#contact"
           >
-            Contact Me
+            Придбати
           </AnchorLink>
           <AnchorLink
             className="rounded-r-sm bg-gradient-rainblue py-0.5 pr-0.5"
@@ -92,9 +92,19 @@ const Landing = ({ setSelectedPage }) => {
             href="#contact"
           >
             <div className="bg-deep-blue hover:text-red transition duration-500 w-full h-full flex items-center justify-center px-10 font-playfair">
-              Let's talk.
+              Безкоштовна Консультація
             </div>
           </AnchorLink>
+        </motion.div>
+
+        <motion.div>
+          <div className="free-consultation">
+            <p className="free-consultation__description">
+              Безкоштовна консультація по Вашому ТікТоку особисто зі мною
+              допоможе зрозуміти чи допоможе мій Курс🔥 в вирішені Ваших проблем
+              профілю та дійти до бажаного результату🔥
+            </p>
+          </div>
         </motion.div>
 
         <motion.div
