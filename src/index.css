@@ -17,13 +17,13 @@ body,
   display: flex;
   justify-content: center;
   gap: 1.5rem;
-  flex-wrap: wrap;
 }
 
 @media (max-width: 575.98px) {
   .hero__textblock {
     display: flex;
-    /* flex-wrap: wrap; */
+    flex-direction: column;
+    justify-content: center;
   }
 }
 

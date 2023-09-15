@@ -51,15 +51,13 @@ const Landing = ({ setSelectedPage }) => {
           }}
         >
           <p className="text-6xl font-playfair z-10 text-center md:text-start">
-            <div className="hero__textblock">
-              <p>TikToker</p>
-              <div
-                className="xxs:relative xxs:text-deep-blue xxs:font-semibold z-20 xxs:before:content-brush
-              before:absolute before:-left-[45px] before:-top-[80px] before:z-[-1] xs: max-w-[120px]"
-              >
-                Хома
-              </div>
-            </div>
+            TikToker {""}
+            <span
+              className="xs:relative xs:text-deep-blue xs:font-semibold z-20 xs:before:content-brush
+              before:absolute before:-left-[25px] before:-top-[70px] before:z-[-1]"
+            >
+              Хома
+            </span>
           </p>
 
           <p className="mt-10 mb-7 text-lg text-center md:text-start">
