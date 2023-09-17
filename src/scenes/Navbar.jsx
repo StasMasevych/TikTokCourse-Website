@@ -27,7 +27,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
   return (
     <nav className={`${navbarBackground} z-40 w-full fixed top-0 py-6`}>
       <div className="flex items-center justify-between mx-auto w-5/6">
-        <div className="flex gap-2 w-2/6 items-center ">
+        <div className="flex gap-2 w-2/6 lg:w-2/6 md: w-2/6 xs: w-3/6 items-center ">
           <div className="icon-box">
             <img src={iconTikTok} alt="icon" />
           </div>
