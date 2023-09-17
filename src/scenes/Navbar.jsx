@@ -2,6 +2,8 @@ import { useState } from "react";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import useMediaQuery from "../hooks/useMediaQuery";
 
+import iconTikTok from "../assets/new-latest-tiktok-logo.png";
+
 const Link = ({ page, selectedPage, setSelectedPage }) => {
   const lowerCasePage = page.toLowerCase();
   return (
@@ -25,7 +27,13 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
   return (
     <nav className={`${navbarBackground} z-40 w-full fixed top-0 py-6`}>
       <div className="flex items-center justify-between mx-auto w-5/6">
-        <h4 className="font-playfair text-2xl font-bold">ТІКТОК КУРС🔥</h4>
+        <div className="flex gap-2">
+          <div className="icon-box">
+            <img src={iconTikTok} alt="icon" />
+          </div>
+          <h4 className="font-playfair text-lg font-bold">ТІКТОК КУРС🔥</h4>
+          {/* text-2xl  */}
+        </div>
 
         {/* DESKTOP NAV */}
         {isDesktop ? (

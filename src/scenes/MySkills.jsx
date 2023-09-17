@@ -2,6 +2,8 @@ import LineGradient from "../components/LineGradient";
 import useMediaQuery from "../hooks/useMediaQuery";
 import { motion } from "framer-motion";
 
+import imgProfile from "../assets/tiktok-gallery5.png";
+
 const MySkills = () => {
   const isAboveLarge = useMediaQuery("(min-width: 1060px)");
   return (
@@ -27,7 +29,8 @@ const MySkills = () => {
           <LineGradient width="w-1/3" />
           <p className="mt-10 mb-7">
             ТікТок відкрив мені нові можливості, тепер я хочу передати вам свій
-            досвід
+            досвід. Уже понад 400 учнів, які пройшли мій курс, навчилися
+            попадати в РЕК 🤩
           </p>
         </motion.div>
 
@@ -40,11 +43,16 @@ const MySkills = () => {
               <img
                 alt="skills"
                 className="z-10"
-                src="assets/skills-image.png"
+                /* src="assets/skills-image.png" */
+                src={imgProfile}
               />
             </div>
           ) : (
-            <img alt="skills" className="z-10" src="assets/skills-image.png" />
+            <img
+              alt="skills"
+              className="z-10"
+              /* src="assets/skills-image.png" */ src={imgProfile}
+            />
           )}
         </div>
       </div>
@@ -134,8 +142,7 @@ const MySkills = () => {
           <p className="mt-5">
             Я вчилася довго і сама, а Ви отримаєте найефективніші алгоритми ТТ,
             слідуючи яким, з першого відео потрапите в РЕК гарантовано, навіть
-            якщо зараз у Вас 1 підписник 4. 400+ учнів, яких я зустрічаю в РЕК
-            Їх результати далі
+            якщо зараз у Вас 1 підписник
           </p>
         </motion.div>
       </div>
