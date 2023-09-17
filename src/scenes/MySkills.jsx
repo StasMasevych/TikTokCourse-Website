@@ -6,8 +6,10 @@ const MySkills = () => {
   const isAboveLarge = useMediaQuery("(min-width: 1060px)");
   return (
     <section id="skills" className="pt-10 pb-24">
+      {/* pt-10 pb-24 */}
       {/* HEADER AND IMAGE SECTION */}
       <div className="md:flex md:justify-between md:gap-16 mt-32">
+        {/* mt-32 */}
         <motion.div
           className="md:w-1/3"
           initial="hidden"
@@ -20,12 +22,12 @@ const MySkills = () => {
           }}
         >
           <p className="font-playfair font-semibold text-4xl mb-5">
-            MY <span className="text-red">SKILLS</span>
+            МОЇ <span className="text-red">РЕЗУЛЬТАТИ</span>
           </p>
           <LineGradient width="w-1/3" />
           <p className="mt-10 mb-7">
-            Aliquam, amet dui feugiat facilisi dui. Aliquam aliquet integer ut
-            fames odio in at.
+            ТікТок відкрив мені нові можливості, тепер я хочу передати вам свій
+            досвід
           </p>
         </motion.div>
 
@@ -61,19 +63,22 @@ const MySkills = () => {
             visible: { opacity: 1, y: 0 },
           }}
         >
-          <div className="relative h-32">
+          <div className="relative h-62">
+            {/* h-32 */}
             <div className="z-10">
               <p className="font-playfair font-semibold text-5xl">01</p>
               <p className="font-playfair font-semibold text-3xl mt-3">
-                Experience
+                💰 Заробіток з 0 грн до 2 000 $ за пів року під час війни🫢
               </p>
             </div>
             <div className="w-1/2 md:w-3/4 h-32 bg-blue absolute right-0 top-0 z-[-1]" />
+            {/* "w-1/2 md:w-3/4 h-32 bg-blue absolute right-0 top-0 z-[-1]" */}
           </div>
           <p className="mt-5">
-            A auctor pharetra hendrerit mattis amet etiam interdum platea. Est
-            morbi porttitor scelerisque fermentum, sagittis non egestas. Amet
-            odio sit sagittis,
+            Я набивала шишки та шукала всі можливі способи заробітку, а Ви
+            отримаєте найефективніші ~10 способів в одному списку з покроковими
+            діями🥳, з кожного з яких можна мати 500$+💰, Ви просто оберете
+            найцікавіші для Вас❤️‍🔥
           </p>
         </motion.div>
 
@@ -89,20 +94,20 @@ const MySkills = () => {
             visible: { opacity: 1, y: 0 },
           }}
         >
-          <div className="relative h-32">
+          <div className="relative h-62">
             <div className="z-10">
               <p className="font-playfair font-semibold text-5xl">02</p>
               <p className="font-playfair font-semibold text-3xl mt-3">
-                Innovative
+                Співпраця з відомими брендами та медіа
               </p>
             </div>
             <div className="w-1/2 md:w-3/4 h-32 bg-red absolute right-0 top-0 z-[-1]" />
           </div>
           <p className="mt-5">
-            Urna, eget pulvinar dolor cursus volutpat dictum odio. Nec ultricies
-            amet in in neque nibh tortor. Libero sed pretium justo nulla blandit
-            nulla amet habitant iaculis. Iaculis in congue vitae sollicitudin
-            faucibus a
+            ParfumCity, RAKETA, Binance, Cococard, Yezzy Salon,
+            AppleDreamUkraine; Треки: Злата Огнєвіч, Леся Кава, тисячі
+            комерційних замовлень та вигідних бартерів (меблі, комплекси
+            відпочинку, салони, ресторани, одяг, міроприємства)
           </p>
         </motion.div>
         {/* IMAGINATIVE */}
@@ -117,20 +122,20 @@ const MySkills = () => {
             visible: { opacity: 1, y: 0 },
           }}
         >
-          <div className="relative h-32">
+          <div className="relative h-62">
             <div className="z-10">
               <p className="font-playfair font-semibold text-5xl">03</p>
               <p className="font-playfair font-semibold text-3xl mt-3">
-                Imaginative
+                Десятки кооперацій з блогерами і нові знайомства
               </p>
             </div>
             <div className="w-1/2 md:w-3/4 h-32 bg-yellow absolute right-0 top-0 z-[-1]" />
           </div>
           <p className="mt-5">
-            Accumsan eu fringilla nisi, eget. Vitae, eget ut id proin arcu in
-            curabitur. Lectus libero, egestas enim aliquam quis felis amet.
-            Sagittis, amet netus fringilla netus lobortis odio sed platea.
-            Bibendum.
+            Я вчилася довго і сама, а Ви отримаєте найефективніші алгоритми ТТ,
+            слідуючи яким, з першого відео потрапите в РЕК гарантовано, навіть
+            якщо зараз у Вас 1 підписник 4. 400+ учнів, яких я зустрічаю в РЕК
+            Їх результати далі
           </p>
         </motion.div>
       </div>
