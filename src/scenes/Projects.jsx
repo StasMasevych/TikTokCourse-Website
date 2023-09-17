@@ -38,7 +38,7 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="lg:pt-60 pb-60 md:pt-60 pb-60 sm:pt-48 pb-48 "
+      className="lg:pt-60 pb-60 md:pt-60 pb-60 xs:pt-48 pb-48 "
     >
       {/* pt-48 pb-48 */}
       {/* HEADINGS */}
