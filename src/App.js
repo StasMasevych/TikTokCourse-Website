@@ -81,7 +81,7 @@ function App() {
           <Testimonials />
         </motion.div>
       </div>
-      <LineGradient />
+      {/* <LineGradient />
       <div className="w-5/6 mx-auto md:h-full">
         <motion.div
           margin="0 0 -200px 0"
@@ -90,7 +90,7 @@ function App() {
         >
           <Test />
         </motion.div>
-      </div>
+      </div> */}
 
       <div className="w-5/6 mx-auto md:h-full">
         <motion.div

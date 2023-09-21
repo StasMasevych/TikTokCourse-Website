@@ -52,7 +52,7 @@ export default function Test() {
             visible: { opacity: 1, scale: 1 },
           }}
         >
-          <div className="flex-1">1</div>
+          <div className="flex-1">2</div>
         </motion.div>
         <motion.div
           className="w-1/3"
@@ -65,7 +65,7 @@ export default function Test() {
             visible: { opacity: 1, scale: 1 },
           }}
         >
-          <div className="flex-1">1</div>
+          <div className="flex-1">3</div>
         </motion.div>
       </div>
     </section>
