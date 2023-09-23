@@ -2,7 +2,8 @@ import LineGradient from "../components/LineGradient";
 import useMediaQuery from "../hooks/useMediaQuery";
 import { motion } from "framer-motion";
 
-import imgProfile from "../assets/tiktok-gallery5.png";
+/* import imgProfile from "../assets/tiktok-gallery5.png"; */
+import imgProfile from "../assets/tiktok-my-results.jpeg";
 
 const MySkills = () => {
   const isAboveLarge = useMediaQuery("(min-width: 1060px)");
@@ -10,7 +11,7 @@ const MySkills = () => {
     <section id="skills" className="pt-10 pb-24">
       {/* pt-10 pb-24 */}
       {/* HEADER AND IMAGE SECTION */}
-      <div className="md:flex md:justify-between md:gap-16 mt-32">
+      <div className="md:flex md:justify-between md:gap-16 mt-32 ">
         {/* mt-32 */}
         <motion.div
           className="md:w-1/3"
@@ -42,7 +43,7 @@ const MySkills = () => {
             >
               <img
                 alt="skills"
-                className="z-10"
+                className="z-10 w-full "
                 /* src="assets/skills-image.png" */
                 src={imgProfile}
               />
@@ -50,7 +51,7 @@ const MySkills = () => {
           ) : (
             <img
               alt="skills"
-              className="z-10"
+              className="z-10 w-full "
               /* src="assets/skills-image.png"  */ src={imgProfile}
             />
           )}
@@ -58,7 +59,8 @@ const MySkills = () => {
       </div>
 
       {/* SKILLS */}
-      <div className="md:flex md:justify-between mt-16 gap-32">
+      <div className="md:flex md:justify-between mt-26 gap-32">
+        {/* mt-26 */}
         {/* EXPERIENCE */}
         <motion.div
           className="md:w-1/3 mt-10"
