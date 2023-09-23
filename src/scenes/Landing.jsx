@@ -57,7 +57,7 @@ const Landing = ({ setSelectedPage }) => {
                 className="xxs:relative xxs:text-deep-blue xxs:font-semibold z-20 xxs:before:content-brush
                 before:absolute before:-left-[45px] before:-top-[70px] before:z-[-1] "
               >
-                Хома
+                <a href="https://www.tiktok.com/@xomaa666">Хома</a>
               </div>
             </div>
           </p>
