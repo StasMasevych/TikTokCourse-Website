@@ -38,12 +38,13 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="lg:mt-80 pt-80 pb-80 md:pt-60 pb-60 xxs:pt-28 pb-48 mt-0"
+      /* className="pt-28 pb-28 md:pt-28 pb-28 xxs:pt-28 pb-28 mt-0" */
+      className="lg:mt-80 pt-80 pb-80 md:pt-60 pb-60 xxs:mt-0 pt-0 pb-48"
     >
       {/* pt-48 pb-48 */}
       {/* HEADINGS */}
       <motion.div
-        className="md:w-2/5 mt-20 mx-auto text-center"
+        className="lg:mt-20 md:w-2/5 mx-auto text-center"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.5 }}

@@ -57,3 +57,40 @@ body, /* {
   font-size: 0.75rem;
   line-height: 1.25rem;
 }
+
+.course__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ff45a4;
+  padding: 32px;
+  border-radius: 50px;
+  height: 14vh;
+  width: 20vw;
+}
+
+.course__item:hover {
+  background-color: #24cbff;
+}
+
+@media (max-width: 991.98px) {
+  .course__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 16px 0;
+    height: 18vh;
+    width: 26vw;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .course__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 16px 0;
+    height: 14vh;
+    width: 70vw;
+  }
+}
