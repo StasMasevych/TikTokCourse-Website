@@ -1,6 +1,6 @@
-import LineGradient from "../components/LineGradient";
-import { useForm } from "react-hook-form";
-import { motion } from "framer-motion";
+import LineGradient from '../components/LineGradient';
+import { useForm } from 'react-hook-form';
+import { motion } from 'framer-motion';
 
 const Contact = () => {
   const {
@@ -10,7 +10,7 @@ const Contact = () => {
   } = useForm();
 
   const onSubmit = async (e) => {
-    console.log("~ e", e);
+    console.log('~ e', e);
     const isValid = await trigger();
     if (!isValid) {
       e.preventDefault();
@@ -29,20 +29,20 @@ const Contact = () => {
           hidden: { opacity: 0, x: 50 },
           visible: { opacity: 1, x: 0 },
         }}
-        className="flex justify-end w-full"
+        className="flex w-full justify-end"
       >
         <div>
-          <p className="font-playfair font-semibold text-4xl">
+          <p className="font-playfair text-4xl font-semibold">
             <span className="text-yellow">CONTACT ME</span> TO GET STARTED
           </p>
-          <div className="flex md:justify-end my-5">
+          <div className="my-5 flex md:justify-end">
             <LineGradient width="w-1/2" />
           </div>
         </div>
       </motion.div>
 
       {/* FORM & IMAGE */}
-      <div className="md:flex md:justify-between gap-16 mt-5">
+      <div className="mt-5 gap-16 md:flex md:justify-between">
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -52,7 +52,7 @@ const Contact = () => {
             hidden: { opacity: 0, y: 50 },
             visible: { opacity: 1, y: 0 },
           }}
-          className="basis-1/2 flex justify-center"
+          className="flex basis-1/2 justify-center"
         >
           <img src="../assets/contact-image.jpeg" alt="contact" />
         </motion.div>
@@ -66,7 +66,7 @@ const Contact = () => {
             hidden: { opacity: 0, y: 50 },
             visible: { opacity: 1, y: 0 },
           }}
-          className="basis-1/2 mt-10 md:mt-0"
+          className="mt-10 basis-1/2 md:mt-0"
         >
           <form
             target="_blank"
@@ -75,59 +75,59 @@ const Contact = () => {
             method="POST"
           >
             <input
-              className="w-full bg-blue font-semibold placeholder-opaque-black p-3"
+              className="w-full bg-blue p-3 font-semibold placeholder-opaque-black"
               type="text"
               placeholder="NAME"
-              {...register("name", {
+              {...register('name', {
                 required: true,
                 maxLength: 100,
               })}
             />
             {errors.name && (
-              <p className="text-red mt-1">
-                {errors.name.type === "required" && "This field is required."}
-                {errors.name.type === "maxLength" && "Max length is 100 char."}
+              <p className="mt-1 text-red">
+                {errors.name.type === 'required' && 'This field is required.'}
+                {errors.name.type === 'maxLength' && 'Max length is 100 char.'}
               </p>
             )}
 
             <input
-              className="w-full bg-blue font-semibold placeholder-opaque-black p-3 mt-5"
+              className="mt-5 w-full bg-blue p-3 font-semibold placeholder-opaque-black"
               type="text"
               placeholder="EMAIL"
-              {...register("email", {
+              {...register('email', {
                 required: true,
                 pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
               })}
             />
             {errors.email && (
-              <p className="text-red mt-1">
-                {errors.email.type === "required" && "This field is required."}
-                {errors.email.type === "pattern" && "Invalid email address."}
+              <p className="mt-1 text-red">
+                {errors.email.type === 'required' && 'This field is required.'}
+                {errors.email.type === 'pattern' && 'Invalid email address.'}
               </p>
             )}
 
             <textarea
-              className="w-full bg-blue font-semibold placeholder-opaque-black p-3 mt-5"
+              className="mt-5 w-full bg-blue p-3 font-semibold placeholder-opaque-black"
               name="message"
               placeholder="MESSAGE"
               rows="4"
               cols="50"
-              {...register("message", {
+              {...register('message', {
                 required: true,
                 maxLength: 2000,
               })}
             />
             {errors.message && (
-              <p className="text-red mt-1">
-                {errors.message.type === "required" &&
-                  "This field is required."}
-                {errors.message.type === "maxLength" &&
-                  "Max length is 2000 char."}
+              <p className="mt-1 text-red">
+                {errors.message.type === 'required' &&
+                  'This field is required.'}
+                {errors.message.type === 'maxLength' &&
+                  'Max length is 2000 char.'}
               </p>
             )}
 
             <button
-              className="p-5 bg-yellow font-semibold text-deep-blue mt-5 hover:bg-red hover:text-white transition duration-500"
+              className="mt-5 bg-yellow p-5 font-semibold text-deep-blue transition duration-500 hover:bg-red hover:text-white"
               type="submit"
             >
               SEND ME A MESSAGE
