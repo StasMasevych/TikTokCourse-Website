@@ -13,6 +13,7 @@ import { useEffect, useState } from 'react';
 import Testimonials from './scenes/Testimonials';
 import { motion } from 'framer-motion';
 import MyTestimonials from './scenes/MyTestimonials';
+import Results from './scenes/Results';
 
 function App() {
   const [selectedPage, setSelectedPage] = useState('home');
@@ -82,7 +83,8 @@ function App() {
           amount="all"
           onViewportEnter={() => setSelectedPage('projects')}
         >
-          <Projects />
+          <Results />
+          {/* <Projects /> */}
         </motion.div>
       </div>
       <LineGradient />
