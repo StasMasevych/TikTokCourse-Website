@@ -1,7 +1,16 @@
-import LineGradient from '../components/LineGradient';
+import { useState } from 'react';
 import { motion } from 'framer-motion';
+import { BsChevronCompactLeft, BsChevronCompactRight } from 'react-icons/bs';
+import { RxDotFilled } from 'react-icons/rx';
 
+import LineGradient from '../components/LineGradient';
 import imgResult1Before from '../assets/result1_before.jpeg';
+import imgResult1After from '../assets/result1_after.jpeg';
+
+const imgResultsSlides1 = [
+  { id: crypto.randomUUID(), image: imgResult1Before },
+  { id: crypto.randomUUID(), image: imgResult1After },
+];
 
 const container = {
   hidden: {},
@@ -12,10 +21,32 @@ const container = {
   },
 };
 
-const Result = ({ title }) => {
+const Result = ({ title, id }) => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
   const overlayStyles = `absolute h-full w-full opacity-0 hover:opacity-60 transition duration-500
     bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue`;
   const projectTitle = title.split(' ').join('-').toLowerCase();
+
+  function nextSlide(id) {
+    if (id === 1) {
+      const isLastSlide = currentIndex === imgResultsSlides1.length - 1;
+      const newIndex = isLastSlide ? 0 : currentIndex + 1;
+      setCurrentIndex(newIndex);
+    }
+
+    return;
+  }
+
+  function previousSlide(id) {
+    if (id === 1) {
+      const isFirstSlide = currentIndex === 0;
+      const newIndex = isFirstSlide
+        ? imgResultsSlides1.length - 1
+        : currentIndex - 1;
+      setCurrentIndex(newIndex);
+    }
+  }
 
   return (
     <motion.div
@@ -29,15 +60,29 @@ const Result = ({ title }) => {
         visible: { opacity: 1, scale: 1 },
       }}
     >
-      <div className={overlayStyles}>
-        <h3>Результати до курсу</h3>
-      </div>
-      <div className="flex max-h-[700px] max-w-[400px]">
+      {/* <div className={overlayStyles}>
+        <h3 className="text-center">Результати до курсу</h3>
+      </div> */}
+      <div className="group relative flex max-h-[700px] max-w-[400px]">
+        {/* Left Arrow */}
+        <div className="absolute top-[50%] left-5 hidden -translate-x-0 translate-y-[-50%] cursor-pointer rounded-full bg-black/20 p-2 text-2xl text-white group-hover:block">
+          <BsChevronCompactLeft size={60} onClick={() => previousSlide(id)} />
+        </div>
+        {/* Right Arrow */}
+        <div className="absolute top-[50%] right-5 hidden -translate-x-0 translate-y-[-50%] cursor-pointer rounded-full bg-black/20 p-2 text-2xl text-white group-hover:block">
+          <BsChevronCompactRight size={60} onClick={() => nextSlide(id)} />
+        </div>
         <img
+          className="h-auto w-auto"
+          src={imgResultsSlides1[currentIndex].image}
+          alt={projectTitle}
+        />
+
+        {/* <img
           className="h-auto w-auto"
           src={imgResult1Before}
           alt={projectTitle}
-        />
+        /> */}
       </div>
     </motion.div>
   );
@@ -96,7 +141,7 @@ const Results = () => {
           >
             BEAUTIFUL USER INTERFACES
           </div>
-          <Result title="Project 1" />
+          <Result title="Project 1" id={1} />
 
           {/* ROW 2 */}
           <div
@@ -105,7 +150,7 @@ const Results = () => {
           >
             BEAUTIFUL USER INTERFACES
           </div>
-          <Result title="Project 2" />
+          <Result title="Project 2" id={2} />
 
           {/* ROW 3 */}
           <div
@@ -114,7 +159,7 @@ const Results = () => {
           >
             BEAUTIFUL USER INTERFACES
           </div>
-          <Result title="Project 3" />
+          <Result title="Project 3" id={3} />
 
           {/* ROW 4 */}
           <div
@@ -123,7 +168,7 @@ const Results = () => {
           >
             BEAUTIFUL USER INTERFACES
           </div>
-          <Result title="Project 4" />
+          <Result title="Project 4" id={4} />
 
           {/* ROW 5 */}
           <div
@@ -132,7 +177,7 @@ const Results = () => {
           >
             BEAUTIFUL USER INTERFACES
           </div>
-          <Result title="Project 2" />
+          <Result title="Project 2" id={5} />
         </motion.div>
       </div>
     </section>
