@@ -8,8 +8,8 @@ import imgResult1Before from '../assets/result1_before.jpeg';
 import imgResult1After from '../assets/result1_after.jpeg';
 
 const imgResultsSlides1 = [
-  { id: crypto.randomUUID(), image: imgResult1Before },
   { id: crypto.randomUUID(), image: imgResult1After },
+  { id: crypto.randomUUID(), image: imgResult1Before },
 ];
 
 const container = {
@@ -63,13 +63,13 @@ const Result = ({ title, id }) => {
       {/* <div className={overlayStyles}>
         <h3 className="text-center">Результати до курсу</h3>
       </div> */}
-      <div className="group relative flex max-h-[700px] max-w-[400px]">
+      <div className="relative flex max-h-[700px] max-w-[400px]">
         {/* Left Arrow */}
-        <div className="absolute top-[50%] left-5 hidden -translate-x-0 translate-y-[-50%] cursor-pointer rounded-full bg-black/20 p-2 text-2xl text-white group-hover:block">
+        <div className="absolute top-[50%] left-5 -translate-x-0 translate-y-[-50%] cursor-pointer rounded-full bg-black/20 p-2 text-2xl text-white">
           <BsChevronCompactLeft size={60} onClick={() => previousSlide(id)} />
         </div>
         {/* Right Arrow */}
-        <div className="absolute top-[50%] right-5 hidden -translate-x-0 translate-y-[-50%] cursor-pointer rounded-full bg-black/20 p-2 text-2xl text-white group-hover:block">
+        <div className="absolute top-[50%] right-5 -translate-x-0 translate-y-[-50%] cursor-pointer rounded-full bg-black/20 p-2 text-2xl text-white">
           <BsChevronCompactRight size={60} onClick={() => nextSlide(id)} />
         </div>
         <img
