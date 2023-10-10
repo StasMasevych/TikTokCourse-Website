@@ -21,7 +21,7 @@ const container = {
   },
 };
 
-const Result = ({ title, id }) => {
+const Result = ({ title, id, setShowTextBefore }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const overlayStyles = `absolute h-full w-full opacity-0 hover:opacity-60 transition duration-500
@@ -33,6 +33,7 @@ const Result = ({ title, id }) => {
       const isLastSlide = currentIndex === imgResultsSlides1.length - 1;
       const newIndex = isLastSlide ? 0 : currentIndex + 1;
       setCurrentIndex(newIndex);
+      setShowTextBefore((prevVal) => !prevVal);
     }
 
     return;
@@ -45,6 +46,7 @@ const Result = ({ title, id }) => {
         ? imgResultsSlides1.length - 1
         : currentIndex - 1;
       setCurrentIndex(newIndex);
+      setShowTextBefore((prevVal) => !prevVal);
     }
   }
 
@@ -89,6 +91,8 @@ const Result = ({ title, id }) => {
 };
 
 const Results = () => {
+  const [showTextBefore, setShowTextBefore] = useState(false);
+
   return (
     <section
       id="projects"
@@ -139,9 +143,13 @@ const Results = () => {
             className="flex max-h-[400px] max-w-[400px] items-center justify-center bg-red
               p-10 text-center font-playfair text-2xl font-semibold"
           >
-            BEAUTIFUL USER INTERFACES
+            {!showTextBefore ? 'Результат після курсу' : 'Результат до курсу'}
           </div>
-          <Result title="Project 1" id={1} />
+          <Result
+            title="Project 1"
+            id={1}
+            setShowTextBefore={setShowTextBefore}
+          />
 
           {/* ROW 2 */}
           <div
