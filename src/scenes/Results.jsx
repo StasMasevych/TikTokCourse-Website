@@ -143,7 +143,9 @@ const Results = () => {
             className="flex max-h-[400px] max-w-[400px] items-center justify-center bg-red
               p-10 text-center font-playfair text-2xl font-semibold"
           >
-            {!showTextBefore ? 'Результат після курсу' : 'Результат до курсу'}
+            {!showTextBefore
+              ? 'Результат після курсу 😍'
+              : 'Результат до курсу 🤯'}
           </div>
           <Result
             title="Project 1"
