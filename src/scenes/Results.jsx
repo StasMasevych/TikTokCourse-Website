@@ -48,6 +48,8 @@ const Result = ({ title, id, setShowTextBefore }) => {
       setCurrentIndex(newIndex);
       setShowTextBefore((prevVal) => !prevVal);
     }
+
+    return;
   }
 
   return (
@@ -132,20 +134,33 @@ const Results = () => {
       {/* RESULTS */}
       <div className="flex justify-center">
         <motion.div
-          className="sm:grid sm:grid-cols-2 sm:gap-6"
+          className="xxs:grid xxs:auto-cols-auto xxs:gap-0 sm:grid sm:grid-cols-2 sm:gap-6"
           variants={container}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
         >
           {/* ROW 1 */}
-          <div
-            className="flex max-h-[400px] max-w-[400px] items-center justify-center bg-red
-              p-10 text-center font-playfair text-2xl font-semibold"
-          >
-            {!showTextBefore
-              ? 'Результат після курсу 😍'
-              : 'Результат до курсу 🤯'}
+          <div className="flex max-h-[400px] max-w-[400px] flex-col justify-center gap-10 bg-red p-10">
+            <div className="text-center font-playfair text-sm">
+              <p>Ірина, мама переселенка закордон</p>
+              <p>
+                📍 Старт: Невіра у алгоритми ТікТоку, мінімальні перегляди,
+                зйомка на авось, бажання монетизації блогу
+              </p>
+              <p>
+                {' '}
+                🔥 Результат: півмільйонні перегляди один за одним 🥳 фуд/травел
+                блогер 🔥 співпраці з закладами, місцями відпочинку,
+                інстаграм-плейсами 🔥 💸 заробіток у ТікТоці та Інстаграмі(за
+                допомогою ТікТоку) 🔥
+              </p>
+            </div>
+            <p className="text-center font-playfair text-2xl font-semibold">
+              {!showTextBefore
+                ? 'Результат після курсу 😍'
+                : 'Результат до курсу ☹️'}
+            </p>
           </div>
           <Result
             title="Project 1"
@@ -156,7 +171,7 @@ const Results = () => {
           {/* ROW 2 */}
           <div
             className="flex max-h-[400px] max-w-[400px] items-center justify-center bg-blue
-              p-10 text-center font-playfair text-2xl font-semibold"
+              p-10 text-center font-playfair text-2xl font-semibold xxs:mt-10"
           >
             BEAUTIFUL USER INTERFACES
           </div>
@@ -165,7 +180,7 @@ const Results = () => {
           {/* ROW 3 */}
           <div
             className="flex max-h-[400px] max-w-[400px] items-center justify-center bg-red
-              p-10 text-center font-playfair text-2xl font-semibold"
+              p-10 text-center font-playfair text-2xl font-semibold xxs:mt-10"
           >
             BEAUTIFUL USER INTERFACES
           </div>
@@ -174,7 +189,7 @@ const Results = () => {
           {/* ROW 4 */}
           <div
             className="flex max-h-[400px] max-w-[400px] items-center justify-center bg-blue
-              p-10 text-center font-playfair text-2xl font-semibold"
+              p-10 text-center font-playfair text-2xl font-semibold xxs:mt-10"
           >
             BEAUTIFUL USER INTERFACES
           </div>
@@ -183,7 +198,7 @@ const Results = () => {
           {/* ROW 5 */}
           <div
             className="flex max-h-[400px] max-w-[400px] items-center justify-center bg-red
-              p-10 text-center font-playfair text-2xl font-semibold"
+              p-10 text-center font-playfair text-2xl font-semibold xxs:mt-10"
           >
             BEAUTIFUL USER INTERFACES
           </div>
