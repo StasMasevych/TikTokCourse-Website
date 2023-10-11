@@ -234,12 +234,12 @@ const Results = () => {
     <section
       id="projects"
       /* className="pt-28 pb-28 md:pt-28 pb-28 xxs:pt-28 pb-28 mt-0" */
-      className="pt-80 pb-28 xxs:mt-0 md:pt-60 lg:mt-80"
+      className="pt-18 pb-28 xxs:mt-0"
     >
       {/* pt-48 pb-48 */}
       {/* HEADINGS */}
       <motion.div
-        className="mx-auto text-center md:w-2/5 lg:mt-20"
+        className="mx-auto text-center md:w-2/5"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.5 }}
