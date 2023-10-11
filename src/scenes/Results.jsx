@@ -1,15 +1,45 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { BsChevronCompactLeft, BsChevronCompactRight } from 'react-icons/bs';
 import { RxDotFilled } from 'react-icons/rx';
 
 import LineGradient from '../components/LineGradient';
+
+//images
 import imgResult1Before from '../assets/result1_before.jpeg';
 import imgResult1After from '../assets/result1_after.jpeg';
+import imgResult2Before from '../assets/result2_before.jpeg';
+import imgResult2After from '../assets/result2_after.jpeg';
+import imgResult3Before from '../assets/result3_before.jpeg';
+import imgResult3After from '../assets/result3_after.jpeg';
+import imgResult4Before from '../assets/result4_before.jpeg';
+import imgResult4After from '../assets/result4_after.jpeg';
+import imgResult5Before from '../assets/result5_before.jpeg';
+import imgResult5After from '../assets/result5_after.jpeg';
 
 const imgResultsSlides1 = [
   { id: crypto.randomUUID(), image: imgResult1After },
   { id: crypto.randomUUID(), image: imgResult1Before },
+];
+
+const imgResultsSlides2 = [
+  { id: crypto.randomUUID(), image: imgResult2After },
+  { id: crypto.randomUUID(), image: imgResult2Before },
+];
+
+const imgResultsSlides3 = [
+  { id: crypto.randomUUID(), image: imgResult3After },
+  { id: crypto.randomUUID(), image: imgResult3Before },
+];
+
+const imgResultsSlides4 = [
+  { id: crypto.randomUUID(), image: imgResult4After },
+  { id: crypto.randomUUID(), image: imgResult4Before },
+];
+
+const imgResultsSlides5 = [
+  { id: crypto.randomUUID(), image: imgResult5After },
+  { id: crypto.randomUUID(), image: imgResult5Before },
 ];
 
 const container = {
@@ -28,9 +58,55 @@ const Result = ({ title, id, setShowTextBefore }) => {
     bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue`;
   const projectTitle = title.split(' ').join('-').toLowerCase();
 
+  /* useEffect(() => {
+    if (id === 1) {
+      setCurrentIndex(0);
+    }
+    if (id === 2) {
+      setCurrentIndex(+2);
+    }
+      if (id === 3) {
+      setCurrentIndex(+4);
+    }
+    if (id === 4) {
+      setCurrentIndex(+6);
+    }
+    if (id === 5) {
+      setCurrentIndex(+8);
+    }
+  }, []); */
+
   function nextSlide(id) {
     if (id === 1) {
       const isLastSlide = currentIndex === imgResultsSlides1.length - 1;
+      const newIndex = isLastSlide ? 0 : currentIndex + 1;
+      setCurrentIndex(newIndex);
+      setShowTextBefore((prevVal) => !prevVal);
+    }
+
+    if (id === 2) {
+      const isLastSlide = currentIndex === imgResultsSlides2.length - 1;
+      const newIndex = isLastSlide ? 0 : currentIndex + 1;
+      setCurrentIndex(newIndex);
+      setShowTextBefore((prevVal) => !prevVal);
+    }
+
+    if (id === 3) {
+      const isLastSlide = currentIndex === imgResultsSlides3.length - 1;
+      const newIndex = isLastSlide ? 0 : currentIndex + 1;
+      setCurrentIndex(newIndex);
+      setShowTextBefore((prevVal) => !prevVal);
+    }
+
+    if (id === 4) {
+      const isLastSlide = currentIndex === imgResultsSlides4.length - 1;
+      const newIndex = isLastSlide ? 0 : currentIndex + 1;
+      setCurrentIndex(newIndex);
+      setShowTextBefore((prevVal) => !prevVal);
+    }
+
+    if (id === 5) {
+      const isLastSlide = currentIndex === imgResultsSlides5.length - 1;
       const newIndex = isLastSlide ? 0 : currentIndex + 1;
       setCurrentIndex(newIndex);
       setShowTextBefore((prevVal) => !prevVal);
@@ -51,6 +127,8 @@ const Result = ({ title, id, setShowTextBefore }) => {
 
     return;
   }
+
+  /* console.log(imgResultsSlides[currentIndex].image); */
 
   return (
     <motion.div
@@ -78,6 +156,7 @@ const Result = ({ title, id, setShowTextBefore }) => {
         </div>
         <img
           className="h-auto w-auto rounded-3xl"
+          /* src={imgResultsSlides[currentIndex]?.image} */
           src={imgResultsSlides1[currentIndex].image}
           alt={projectTitle}
         />
@@ -169,40 +248,116 @@ const Results = () => {
           />
 
           {/* ROW 2 */}
-          <div
-            className="flex max-h-[400px] max-w-[400px] items-center justify-center bg-blue
-              p-10 text-center font-playfair text-2xl font-semibold xxs:mt-10 sm:mt-0"
-          >
-            BEAUTIFUL USER INTERFACES
+          <div className="flex max-h-[400px] max-w-[400px] flex-col justify-center gap-6">
+            <div className=" rounded-3xl bg-red p-10 text-center font-playfair text-sm xxs:mt-6">
+              <p>Ірина, мама переселенка закордон</p>
+              <p>
+                📍 Старт: Невіра у алгоритми ТікТоку, мінімальні перегляди,
+                зйомка на авось, бажання монетизації блогу
+              </p>
+              <p>
+                {' '}
+                🔥 Результат: півмільйонні перегляди один за одним 🥳 фуд/травел
+                блогер 🔥 співпраці з закладами, місцями відпочинку,
+                інстаграм-плейсами 🔥 💸 заробіток у ТікТоці та Інстаграмі(за
+                допомогою ТікТоку) 🔥
+              </p>
+            </div>
+            <p className="rounded-3xl bg-blue p-6 text-center font-playfair text-2xl font-semibold xxs:mb-6">
+              {!showTextBefore
+                ? 'Результат після курсу 😍'
+                : 'Результат до курсу ☹️'}
+            </p>
           </div>
-          <Result title="Project 2" id={2} />
+          <Result
+            title="Project 2"
+            id={2}
+            setShowTextBefore={setShowTextBefore}
+          />
 
           {/* ROW 3 */}
-          <div
-            className="flex max-h-[400px] max-w-[400px] items-center justify-center bg-red
-              p-10 text-center font-playfair text-2xl font-semibold xxs:mt-10 sm:mt-0"
-          >
-            BEAUTIFUL USER INTERFACES
+          <div className="flex max-h-[400px] max-w-[400px] flex-col justify-center gap-6">
+            <div className=" rounded-3xl bg-red p-10 text-center font-playfair text-sm xxs:mt-6">
+              <p>Ірина, мама переселенка закордон</p>
+              <p>
+                📍 Старт: Невіра у алгоритми ТікТоку, мінімальні перегляди,
+                зйомка на авось, бажання монетизації блогу
+              </p>
+              <p>
+                {' '}
+                🔥 Результат: півмільйонні перегляди один за одним 🥳 фуд/травел
+                блогер 🔥 співпраці з закладами, місцями відпочинку,
+                інстаграм-плейсами 🔥 💸 заробіток у ТікТоці та Інстаграмі(за
+                допомогою ТікТоку) 🔥
+              </p>
+            </div>
+            <p className="rounded-3xl bg-blue p-6 text-center font-playfair text-2xl font-semibold xxs:mb-6">
+              {!showTextBefore
+                ? 'Результат після курсу 😍'
+                : 'Результат до курсу ☹️'}
+            </p>
           </div>
-          <Result title="Project 3" id={3} />
+          <Result
+            title="Project 3"
+            id={3}
+            setShowTextBefore={setShowTextBefore}
+          />
 
           {/* ROW 4 */}
-          <div
-            className="flex max-h-[400px] max-w-[400px] items-center justify-center bg-blue
-              p-10 text-center font-playfair text-2xl font-semibold xxs:mt-10 sm:mt-0"
-          >
-            BEAUTIFUL USER INTERFACES
+          <div className="flex max-h-[400px] max-w-[400px] flex-col justify-center gap-6">
+            <div className=" rounded-3xl bg-red p-10 text-center font-playfair text-sm xxs:mt-6">
+              <p>Ірина, мама переселенка закордон</p>
+              <p>
+                📍 Старт: Невіра у алгоритми ТікТоку, мінімальні перегляди,
+                зйомка на авось, бажання монетизації блогу
+              </p>
+              <p>
+                {' '}
+                🔥 Результат: півмільйонні перегляди один за одним 🥳 фуд/травел
+                блогер 🔥 співпраці з закладами, місцями відпочинку,
+                інстаграм-плейсами 🔥 💸 заробіток у ТікТоці та Інстаграмі(за
+                допомогою ТікТоку) 🔥
+              </p>
+            </div>
+            <p className="rounded-3xl bg-blue p-6 text-center font-playfair text-2xl font-semibold xxs:mb-6">
+              {!showTextBefore
+                ? 'Результат після курсу 😍'
+                : 'Результат до курсу ☹️'}
+            </p>
           </div>
-          <Result title="Project 4" id={4} />
+          <Result
+            title="Project 4"
+            id={4}
+            setShowTextBefore={setShowTextBefore}
+          />
 
           {/* ROW 5 */}
-          <div
-            className="flex max-h-[400px] max-w-[400px] items-center justify-center bg-red
-              p-10 text-center font-playfair text-2xl font-semibold xxs:mt-10 sm:mt-0"
-          >
-            BEAUTIFUL USER INTERFACES
+          <div className="flex max-h-[400px] max-w-[400px] flex-col justify-center gap-6">
+            <div className=" rounded-3xl bg-red p-10 text-center font-playfair text-sm xxs:mt-6">
+              <p>Ірина, мама переселенка закордон</p>
+              <p>
+                📍 Старт: Невіра у алгоритми ТікТоку, мінімальні перегляди,
+                зйомка на авось, бажання монетизації блогу
+              </p>
+              <p>
+                {' '}
+                🔥 Результат: півмільйонні перегляди один за одним 🥳 фуд/травел
+                блогер 🔥 співпраці з закладами, місцями відпочинку,
+                інстаграм-плейсами 🔥 💸 заробіток у ТікТоці та Інстаграмі(за
+                допомогою ТікТоку) 🔥
+              </p>
+            </div>
+            <p className="rounded-3xl bg-blue p-6 text-center font-playfair text-2xl font-semibold xxs:mb-6">
+              {!showTextBefore
+                ? 'Результат після курсу 😍'
+                : 'Результат до курсу ☹️'}
+            </p>
           </div>
-          <Result title="Project 2" id={5} />
+          <Result
+            title="Project 5"
+            id={5}
+            setShowTextBefore={setShowTextBefore}
+          />
         </motion.div>
       </div>
     </section>
