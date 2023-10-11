@@ -77,7 +77,7 @@ const Result = ({ title, id, setShowTextBefore }) => {
           <BsChevronCompactRight size={60} onClick={() => nextSlide(id)} />
         </div>
         <img
-          className="h-auto w-auto"
+          className="h-auto w-auto rounded-3xl"
           src={imgResultsSlides1[currentIndex].image}
           alt={projectTitle}
         />
@@ -141,8 +141,8 @@ const Results = () => {
           viewport={{ once: true, amount: 0.2 }}
         >
           {/* ROW 1 */}
-          <div className="flex max-h-[400px] max-w-[400px] flex-col justify-center gap-10 bg-red p-10">
-            <div className="text-center font-playfair text-sm">
+          <div className="flex max-h-[400px] max-w-[400px] flex-col justify-center gap-6">
+            <div className=" rounded-3xl bg-red p-10 text-center font-playfair text-sm xxs:mb-0">
               <p>Ірина, мама переселенка закордон</p>
               <p>
                 📍 Старт: Невіра у алгоритми ТікТоку, мінімальні перегляди,
@@ -156,7 +156,7 @@ const Results = () => {
                 допомогою ТікТоку) 🔥
               </p>
             </div>
-            <p className="text-center font-playfair text-2xl font-semibold">
+            <p className="rounded-3xl bg-blue p-6 text-center font-playfair text-2xl font-semibold xxs:mb-6">
               {!showTextBefore
                 ? 'Результат після курсу 😍'
                 : 'Результат до курсу ☹️'}
@@ -171,7 +171,7 @@ const Results = () => {
           {/* ROW 2 */}
           <div
             className="flex max-h-[400px] max-w-[400px] items-center justify-center bg-blue
-              p-10 text-center font-playfair text-2xl font-semibold xxs:mt-10"
+              p-10 text-center font-playfair text-2xl font-semibold xxs:mt-10 sm:mt-0"
           >
             BEAUTIFUL USER INTERFACES
           </div>
@@ -180,7 +180,7 @@ const Results = () => {
           {/* ROW 3 */}
           <div
             className="flex max-h-[400px] max-w-[400px] items-center justify-center bg-red
-              p-10 text-center font-playfair text-2xl font-semibold xxs:mt-10"
+              p-10 text-center font-playfair text-2xl font-semibold xxs:mt-10 sm:mt-0"
           >
             BEAUTIFUL USER INTERFACES
           </div>
@@ -189,7 +189,7 @@ const Results = () => {
           {/* ROW 4 */}
           <div
             className="flex max-h-[400px] max-w-[400px] items-center justify-center bg-blue
-              p-10 text-center font-playfair text-2xl font-semibold xxs:mt-10"
+              p-10 text-center font-playfair text-2xl font-semibold xxs:mt-10 sm:mt-0"
           >
             BEAUTIFUL USER INTERFACES
           </div>
@@ -198,7 +198,7 @@ const Results = () => {
           {/* ROW 5 */}
           <div
             className="flex max-h-[400px] max-w-[400px] items-center justify-center bg-red
-              p-10 text-center font-playfair text-2xl font-semibold xxs:mt-10"
+              p-10 text-center font-playfair text-2xl font-semibold xxs:mt-10 sm:mt-0"
           >
             BEAUTIFUL USER INTERFACES
           </div>
