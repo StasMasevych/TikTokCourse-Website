@@ -234,7 +234,7 @@ const Results = () => {
     <section
       id="projects"
       /* className="pt-28 pb-28 md:pt-28 pb-28 xxs:pt-28 pb-28 mt-0" */
-      className="pt-80 pb-80 pb-60 pt-0 pb-48 xxs:mt-0 md:pt-60 lg:mt-80"
+      className="pt-80 pb-28 xxs:mt-0 md:pt-60 lg:mt-80"
     >
       {/* pt-48 pb-48 */}
       {/* HEADINGS */}

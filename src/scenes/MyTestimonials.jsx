@@ -3,10 +3,10 @@ import { motion } from 'framer-motion';
 
 const MyTestimonials = () => {
   return (
-    <section id="testimonials" className="pt-32 pb-16">
+    <section id="testimonials" className="pt-32">
       {/* HEADING */}
       <motion.div
-        className="text-center md:w-1/3 md:text-left"
+        className="mx-auto text-center md:w-2/5"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.5 }}
@@ -19,7 +19,7 @@ const MyTestimonials = () => {
         <p className="mb-5 font-playfair text-4xl font-semibold text-red">
           ВІДГУКИ
         </p>
-        <LineGradient width="mx-auto w-2/5" />
+        <LineGradient width="mx-auto w-4/5" />
         <p className="mt-10">
           Сотні учнів уже пройшли мій ТікТок курс, і можуть дати йому оцінку! 🤩
         </p>

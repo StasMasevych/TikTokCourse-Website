@@ -14,6 +14,7 @@ import Testimonials from './scenes/Testimonials';
 import { motion } from 'framer-motion';
 import MyTestimonials from './scenes/MyTestimonials';
 import Results from './scenes/Results';
+import QuestionsAndAnswers from './scenes/Q&A';
 
 function App() {
   const [selectedPage, setSelectedPage] = useState('home');
@@ -96,6 +97,15 @@ function App() {
         >
           {/* <Testimonials /> */}
           <MyTestimonials />
+        </motion.div>
+      </div>
+      <div className="mx-auto w-5/6">
+        <motion.div
+          margin="0 0 -200px 0"
+          amount="all"
+          onViewportEnter={() => setSelectedPage('Q&A')}
+        >
+          <QuestionsAndAnswers />
         </motion.div>
       </div>
       <div className="mx-auto w-5/6 md:h-auto">
