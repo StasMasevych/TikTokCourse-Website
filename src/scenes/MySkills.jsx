@@ -1,17 +1,17 @@
-import LineGradient from "../components/LineGradient";
-import useMediaQuery from "../hooks/useMediaQuery";
-import { motion } from "framer-motion";
+import LineGradient from '../components/LineGradient';
+import useMediaQuery from '../hooks/useMediaQuery';
+import { motion } from 'framer-motion';
 
 /* import imgProfile from "../assets/tiktok-gallery5.png"; */
-import imgProfile from "../assets/tiktok-my-results.jpeg";
+import imgProfile from '../assets/tiktok-my-results.jpeg';
 
 const MySkills = () => {
-  const isAboveLarge = useMediaQuery("(min-width: 1060px)");
+  const isAboveLarge = useMediaQuery('(min-width: 1060px)');
   return (
-    <section id="skills" className="pt-10 pb-24">
+    <section id="skills" className="pt-32 pb-24">
       {/* pt-10 pb-24 */}
       {/* HEADER AND IMAGE SECTION */}
-      <div className="md:flex md:justify-between md:gap-16 mt-32 ">
+      <div className="md:flex md:justify-between md:gap-16 ">
         {/* mt-32 */}
         <motion.div
           className="md:w-1/3"
@@ -24,7 +24,7 @@ const MySkills = () => {
             visible: { opacity: 1, x: 0 },
           }}
         >
-          <p className="font-playfair font-semibold text-4xl mb-5">
+          <p className="mb-5 font-playfair text-4xl font-semibold">
             МОЇ <span className="text-red">РЕЗУЛЬТАТИ</span>
           </p>
           <LineGradient width="w-1/3" />
@@ -39,7 +39,7 @@ const MySkills = () => {
           {isAboveLarge ? (
             <div
               className="relative z-0 ml-20 before:absolute before:-top-10 before:-left-10
-              before:w-full before:h-full before:border-2 before:border-blue before:z-[-1]"
+              before:z-[-1] before:h-full before:w-full before:border-2 before:border-blue"
             >
               <img
                 alt="skills"
@@ -59,11 +59,11 @@ const MySkills = () => {
       </div>
 
       {/* SKILLS */}
-      <div className="md:flex md:justify-between mt-26 gap-32">
+      <div className="mt-26 gap-32 md:flex md:justify-between">
         {/* mt-26 */}
         {/* EXPERIENCE */}
         <motion.div
-          className="md:w-1/3 mt-20"
+          className="mt-20 md:w-1/3"
           /* mt-10 */
           initial="hidden"
           whileInView="visible"
@@ -74,15 +74,15 @@ const MySkills = () => {
             visible: { opacity: 1, y: 0 },
           }}
         >
-          <div className="relative h-62">
+          <div className="h-62 relative">
             {/* h-32 */}
             <div className="z-10">
-              <p className="font-playfair font-semibold text-5xl">01</p>
-              <p className="font-playfair font-semibold text-3xl mt-3">
+              <p className="font-playfair text-5xl font-semibold">01</p>
+              <p className="mt-3 font-playfair text-3xl font-semibold">
                 💰 Заробіток з 0 грн до 2 000 $ за пів року під час війни🫢
               </p>
             </div>
-            <div className="w-1/2 md:w-3/4 h-32 bg-blue absolute right-0 top-0 z-[-1]" />
+            <div className="absolute right-0 top-0 z-[-1] h-32 w-1/2 bg-blue md:w-3/4" />
             {/* "w-1/2 md:w-3/4 h-32 bg-blue absolute right-0 top-0 z-[-1]" */}
           </div>
           <p className="mt-5">
@@ -95,7 +95,7 @@ const MySkills = () => {
 
         {/* INNOVATIVE */}
         <motion.div
-          className="md:w-1/3 mt-20"
+          className="mt-20 md:w-1/3"
           /* mt-10 */
           initial="hidden"
           whileInView="visible"
@@ -106,14 +106,14 @@ const MySkills = () => {
             visible: { opacity: 1, y: 0 },
           }}
         >
-          <div className="relative h-62">
+          <div className="h-62 relative">
             <div className="z-10">
-              <p className="font-playfair font-semibold text-5xl">02</p>
-              <p className="font-playfair font-semibold text-3xl mt-3">
+              <p className="font-playfair text-5xl font-semibold">02</p>
+              <p className="mt-3 font-playfair text-3xl font-semibold">
                 Співпраця з відомими брендами та медіа
               </p>
             </div>
-            <div className="w-1/2 md:w-3/4 h-32 bg-red absolute right-0 top-0 z-[-1]" />
+            <div className="absolute right-0 top-0 z-[-1] h-32 w-1/2 bg-red md:w-3/4" />
           </div>
           <p className="mt-5">
             ParfumCity, RAKETA, Binance, Cococard, Yezzy Salon,
@@ -124,7 +124,7 @@ const MySkills = () => {
         </motion.div>
         {/* IMAGINATIVE */}
         <motion.div
-          className="md:w-1/3 mt-20"
+          className="mt-20 md:w-1/3"
           /* mt-10 */
           initial="hidden"
           whileInView="visible"
@@ -135,14 +135,14 @@ const MySkills = () => {
             visible: { opacity: 1, y: 0 },
           }}
         >
-          <div className="relative h-62">
+          <div className="h-62 relative">
             <div className="z-10">
-              <p className="font-playfair font-semibold text-5xl">03</p>
-              <p className="font-playfair font-semibold text-3xl mt-3">
+              <p className="font-playfair text-5xl font-semibold">03</p>
+              <p className="mt-3 font-playfair text-3xl font-semibold">
                 Впізнаваність та популярність
               </p>
             </div>
-            <div className="w-1/2 md:w-3/4 h-32 bg-yellow absolute right-0 top-0 z-[-1]" />
+            <div className="absolute right-0 top-0 z-[-1] h-32 w-1/2 bg-yellow md:w-3/4" />
           </div>
           <p className="mt-5">
             В ТікТоці стати зіркою зараз супер просто і швидко! Ловіть момент!

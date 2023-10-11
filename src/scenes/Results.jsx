@@ -268,14 +268,14 @@ const Results = () => {
       {/* RESULTS */}
       <div className="flex justify-center">
         <motion.div
-          className="xxs:grid xxs:auto-cols-auto xxs:gap-6 sm:grid sm:grid-cols-2 sm:gap-8"
+          className="xxs:grid xxs:auto-cols-auto xxs:gap-8 sm:grid sm:grid-cols-2"
           variants={container}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
         >
           {/* ROW 1 */}
-          <div className="flex max-h-[400px] max-w-[400px] flex-col gap-8">
+          <div className="flex max-h-[400px] max-w-[400px] flex-col xxs:gap-6">
             <div className=" rounded-3xl bg-red p-10 text-center font-playfair text-sm xxs:mt-6 sm:mt-0">
               <p>Ірина, мама переселенка закордон</p>
               <p>
@@ -290,7 +290,7 @@ const Results = () => {
                 допомогою ТікТоку) 🔥
               </p>
             </div>
-            <p className="rounded-3xl bg-blue p-6 text-center font-playfair text-2xl font-semibold xxs:mb-6">
+            <p className="rounded-3xl bg-blue p-6 text-center font-playfair text-2xl font-semibold">
               {!showTextBefore
                 ? 'Результат після курсу 😍'
                 : 'Результат до курсу ☹️'}
@@ -303,7 +303,7 @@ const Results = () => {
           />
 
           {/* ROW 2 */}
-          <div className="flex max-h-[400px] max-w-[400px] flex-col gap-8">
+          <div className="flex max-h-[400px] max-w-[400px] flex-col xxs:gap-6">
             <div className=" rounded-3xl bg-red p-10 text-center font-playfair text-sm xxs:mt-6 sm:mt-0">
               <p>Ангеліна, мама у декреті, акторка</p>
               <p>📍 Старт: 1500 підписників</p>
@@ -316,7 +316,7 @@ const Results = () => {
                 Інстаграм 🔥
               </p>
             </div>
-            <p className="rounded-3xl bg-blue p-6 text-center font-playfair text-2xl font-semibold xxs:mb-6">
+            <p className="rounded-3xl bg-blue p-6 text-center font-playfair text-2xl font-semibold">
               {!showTextBefore
                 ? 'Результат після курсу 😍'
                 : 'Результат до курсу ☹️'}
@@ -329,7 +329,7 @@ const Results = () => {
           />
 
           {/* ROW 3 */}
-          <div className="flex max-h-[400px] max-w-[400px] flex-col gap-8">
+          <div className="flex max-h-[400px] max-w-[400px] flex-col xxs:gap-6">
             <div className=" rounded-3xl bg-red p-10 text-center font-playfair text-sm xxs:mt-6 sm:mt-0">
               <p>Вікторія, мама у декреті</p>
               <p>📍 Старт: Купувала інші Курси - не допомогли 👎</p>
@@ -341,7 +341,7 @@ const Results = () => {
                 перегляди! 🔥
               </p>
             </div>
-            <p className="rounded-3xl bg-blue p-6 text-center font-playfair text-2xl font-semibold xxs:mb-6">
+            <p className="rounded-3xl bg-blue p-6 text-center font-playfair text-2xl font-semibold">
               {!showTextBefore
                 ? 'Результат після курсу 😍'
                 : 'Результат до курсу ☹️'}
@@ -354,7 +354,7 @@ const Results = () => {
           />
 
           {/* ROW 4 */}
-          <div className="flex max-h-[400px] max-w-[400px] flex-col gap-8">
+          <div className="flex max-h-[400px] max-w-[400px] flex-col xxs:gap-6">
             <div className=" rounded-3xl bg-red p-10 text-center font-playfair text-sm xxs:mt-6 sm:mt-0">
               <p>Юлія, мама у декреті</p>
               <p>
@@ -368,7 +368,7 @@ const Results = () => {
                 Монетизація блогу! 🔥
               </p>
             </div>
-            <p className="rounded-3xl bg-blue p-6 text-center font-playfair text-2xl font-semibold xxs:mb-6">
+            <p className="rounded-3xl bg-blue p-6 text-center font-playfair text-2xl font-semibold">
               {!showTextBefore
                 ? 'Результат після курсу 😍'
                 : 'Результат до курсу ☹️'}
@@ -381,7 +381,7 @@ const Results = () => {
           />
 
           {/* ROW 5 */}
-          <div className="fl flex max-h-[400px] max-w-[400px] flex-col gap-8">
+          <div className="fl flex max-h-[400px] max-w-[400px] flex-col xxs:gap-6">
             <div className=" rounded-3xl bg-red p-10 text-center font-playfair text-sm xxs:mt-6 sm:mt-0">
               <p>Анна, косметолог</p>
               <p>
@@ -395,7 +395,7 @@ const Results = () => {
                 безкоштовно 🥳
               </p>
             </div>
-            <p className="rounded-3xl bg-blue p-6 text-center font-playfair text-2xl font-semibold xxs:mb-6 sm:mb-0">
+            <p className="rounded-3xl bg-blue p-6 text-center font-playfair text-2xl font-semibold">
               {!showTextBefore
                 ? 'Результат після курсу 😍'
                 : 'Результат до курсу ☹️'}

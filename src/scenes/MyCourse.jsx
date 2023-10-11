@@ -1,15 +1,12 @@
-import LineGradient from "../components/LineGradient";
-import { motion } from "framer-motion";
+import LineGradient from '../components/LineGradient';
+import { motion } from 'framer-motion';
 
 export default function MyCourse() {
   return (
-    <section
-      id="course"
-      className="lg:mt-80 pt-80 pb-80 md:pt-60 pb-60 xxs:pt-28 pb-48 mt-0"
-    >
+    <section id="course" className="xxs:pt-32 xxs:pb-28">
       {/* HEADING */}
       <motion.div
-        className="lg:w-full md:w-1/3 md:text-left"
+        className="md:w-1/3 md:text-left lg:w-full"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.5 }}
@@ -19,7 +16,7 @@ export default function MyCourse() {
           visible: { opacity: 1, x: 0 },
         }}
       >
-        <p className=" lg:mt-40 text-center font-playfair font-semibold text-4xl mb-5">
+        <p className=" mb-5 text-center font-playfair text-4xl font-semibold lg:mt-40">
           Знайомтесь з моїм <span className="text-red">ТікТок курсом 🤩</span>
         </p>
         {/* <p className="lg:mt-40 text-center font-playfair font-semibold text-4xl mb-5 text-red"></p> */}
@@ -31,7 +28,7 @@ export default function MyCourse() {
 
       {/* Course list of content items */}
       <div className="flex justify-center">
-        <div className="sm:grid justify-items-center sm:grid-cols-3 gap-8">
+        <div className="justify-items-center gap-8 sm:grid sm:grid-cols-3">
           <motion.div
             /* className="w-1/3" */
             initial="hidden"
