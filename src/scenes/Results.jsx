@@ -259,9 +259,8 @@ const Results = () => {
             </div>
           </div>
           <p className="mt-10 mb-10">
-            Aliquam, amet dui feugiat facilisi dui. Aliquam aliquet integer ut
-            fames odio in at. At magna ornare dictum lectus. Purus massa morbi
-            purus nec eget eleifend ut elit.
+            Багатьом моїм учням уже вдалося досягти чудових результатів після
+            мого ТікТок курсу!
           </p>
         </div>
       </motion.div>
@@ -269,15 +268,15 @@ const Results = () => {
       {/* RESULTS */}
       <div className="flex justify-center">
         <motion.div
-          className="xxs:grid xxs:auto-cols-auto xxs:gap-0 sm:grid sm:grid-cols-2 sm:gap-6"
+          className="xxs:grid xxs:auto-cols-auto xxs:gap-6 sm:grid sm:grid-cols-2 sm:gap-8"
           variants={container}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
         >
           {/* ROW 1 */}
-          <div className="flex max-h-[400px] max-w-[400px] flex-col justify-center gap-4">
-            <div className=" rounded-3xl bg-red p-10 text-center font-playfair text-sm xxs:mb-0">
+          <div className="flex max-h-[400px] max-w-[400px] flex-col gap-8">
+            <div className=" rounded-3xl bg-red p-10 text-center font-playfair text-sm xxs:mt-6 sm:mt-0">
               <p>Ірина, мама переселенка закордон</p>
               <p>
                 📍 Старт: Невіра у алгоритми ТікТоку, мінімальні перегляди,
@@ -304,8 +303,8 @@ const Results = () => {
           />
 
           {/* ROW 2 */}
-          <div className="flex max-h-[400px] max-w-[400px] flex-col justify-center gap-4">
-            <div className=" rounded-3xl bg-red p-10 text-center font-playfair text-sm xxs:mt-6">
+          <div className="flex max-h-[400px] max-w-[400px] flex-col gap-8">
+            <div className=" rounded-3xl bg-red p-10 text-center font-playfair text-sm xxs:mt-6 sm:mt-0">
               <p>Ангеліна, мама у декреті, акторка</p>
               <p>📍 Старт: 1500 підписників</p>
               <p>
@@ -330,8 +329,8 @@ const Results = () => {
           />
 
           {/* ROW 3 */}
-          <div className="flex max-h-[400px] max-w-[400px] flex-col justify-center gap-4">
-            <div className=" rounded-3xl bg-red p-10 text-center font-playfair text-sm xxs:mt-6">
+          <div className="flex max-h-[400px] max-w-[400px] flex-col gap-8">
+            <div className=" rounded-3xl bg-red p-10 text-center font-playfair text-sm xxs:mt-6 sm:mt-0">
               <p>Вікторія, мама у декреті</p>
               <p>📍 Старт: Купувала інші Курси - не допомогли 👎</p>
               <p>
@@ -355,8 +354,8 @@ const Results = () => {
           />
 
           {/* ROW 4 */}
-          <div className="flex max-h-[400px] max-w-[400px] flex-col justify-center gap-4">
-            <div className=" rounded-3xl bg-red p-10 text-center font-playfair text-sm xxs:mt-6">
+          <div className="flex max-h-[400px] max-w-[400px] flex-col gap-8">
+            <div className=" rounded-3xl bg-red p-10 text-center font-playfair text-sm xxs:mt-6 sm:mt-0">
               <p>Юлія, мама у декреті</p>
               <p>
                 📍 Старт: Нерозуміння алгоритмів ТікТок, бажання розвиватися і
@@ -382,8 +381,8 @@ const Results = () => {
           />
 
           {/* ROW 5 */}
-          <div className="flex max-h-[400px] max-w-[400px] flex-col justify-center gap-4">
-            <div className=" rounded-3xl bg-red p-10 text-center font-playfair text-sm xxs:mt-6">
+          <div className="fl flex max-h-[400px] max-w-[400px] flex-col gap-8">
+            <div className=" rounded-3xl bg-red p-10 text-center font-playfair text-sm xxs:mt-6 sm:mt-0">
               <p>Анна, косметолог</p>
               <p>
                 📍 Старт: Нерозуміння як знайти клієнтів через ТікТок та
@@ -396,7 +395,7 @@ const Results = () => {
                 безкоштовно 🥳
               </p>
             </div>
-            <p className="rounded-3xl bg-blue p-6 text-center font-playfair text-2xl font-semibold xxs:mb-6">
+            <p className="rounded-3xl bg-blue p-6 text-center font-playfair text-2xl font-semibold xxs:mb-6 sm:mb-0">
               {!showTextBefore
                 ? 'Результат після курсу 😍'
                 : 'Результат до курсу ☹️'}
