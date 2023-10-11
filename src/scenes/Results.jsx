@@ -220,7 +220,7 @@ const Results = () => {
           viewport={{ once: true, amount: 0.2 }}
         >
           {/* ROW 1 */}
-          <div className="flex max-h-[400px] max-w-[400px] flex-col justify-center gap-6">
+          <div className="flex max-h-[400px] max-w-[400px] flex-col justify-center gap-4">
             <div className=" rounded-3xl bg-red p-10 text-center font-playfair text-sm xxs:mb-0">
               <p>Ірина, мама переселенка закордон</p>
               <p>
@@ -248,7 +248,7 @@ const Results = () => {
           />
 
           {/* ROW 2 */}
-          <div className="flex max-h-[400px] max-w-[400px] flex-col justify-center gap-6">
+          <div className="flex max-h-[400px] max-w-[400px] flex-col justify-center gap-4">
             <div className=" rounded-3xl bg-red p-10 text-center font-playfair text-sm xxs:mt-6">
               <p>Ірина, мама переселенка закордон</p>
               <p>
@@ -276,7 +276,7 @@ const Results = () => {
           />
 
           {/* ROW 3 */}
-          <div className="flex max-h-[400px] max-w-[400px] flex-col justify-center gap-6">
+          <div className="flex max-h-[400px] max-w-[400px] flex-col justify-center gap-4">
             <div className=" rounded-3xl bg-red p-10 text-center font-playfair text-sm xxs:mt-6">
               <p>Ірина, мама переселенка закордон</p>
               <p>
@@ -304,7 +304,7 @@ const Results = () => {
           />
 
           {/* ROW 4 */}
-          <div className="flex max-h-[400px] max-w-[400px] flex-col justify-center gap-6">
+          <div className="flex max-h-[400px] max-w-[400px] flex-col justify-center gap-4">
             <div className=" rounded-3xl bg-red p-10 text-center font-playfair text-sm xxs:mt-6">
               <p>Ірина, мама переселенка закордон</p>
               <p>
@@ -332,7 +332,7 @@ const Results = () => {
           />
 
           {/* ROW 5 */}
-          <div className="flex max-h-[400px] max-w-[400px] flex-col justify-center gap-6">
+          <div className="flex max-h-[400px] max-w-[400px] flex-col justify-center gap-4">
             <div className=" rounded-3xl bg-red p-10 text-center font-playfair text-sm xxs:mt-6">
               <p>Ірина, мама переселенка закордон</p>
               <p>
