@@ -65,7 +65,7 @@ const Result = ({ title, id, setShowTextBefore }) => {
     if (id === 2) {
       setCurrentIndex(+2);
     }
-      if (id === 3) {
+    if (id === 3) {
       setCurrentIndex(+4);
     }
     if (id === 4) {
@@ -125,10 +125,66 @@ const Result = ({ title, id, setShowTextBefore }) => {
       setShowTextBefore((prevVal) => !prevVal);
     }
 
+    if (id === 2) {
+      const isFirstSlide = currentIndex === 0;
+      const newIndex = isFirstSlide
+        ? imgResultsSlides2.length - 1
+        : currentIndex - 1;
+      setCurrentIndex(newIndex);
+      setShowTextBefore((prevVal) => !prevVal);
+    }
+
+    if (id === 3) {
+      const isFirstSlide = currentIndex === 0;
+      const newIndex = isFirstSlide
+        ? imgResultsSlides3.length - 1
+        : currentIndex - 1;
+      setCurrentIndex(newIndex);
+      setShowTextBefore((prevVal) => !prevVal);
+    }
+
+    if (id === 4) {
+      const isFirstSlide = currentIndex === 0;
+      const newIndex = isFirstSlide
+        ? imgResultsSlides4.length - 1
+        : currentIndex - 1;
+      setCurrentIndex(newIndex);
+      setShowTextBefore((prevVal) => !prevVal);
+    }
+
+    if (id === 5) {
+      const isFirstSlide = currentIndex === 0;
+      const newIndex = isFirstSlide
+        ? imgResultsSlides5.length - 1
+        : currentIndex - 1;
+      setCurrentIndex(newIndex);
+      setShowTextBefore((prevVal) => !prevVal);
+    }
+
     return;
   }
 
-  /* console.log(imgResultsSlides[currentIndex].image); */
+  function showImages() {
+    if (id === 1) {
+      return imgResultsSlides1[currentIndex].image;
+    }
+
+    if (id === 2) {
+      return imgResultsSlides2[currentIndex].image;
+    }
+
+    if (id === 3) {
+      return imgResultsSlides3[currentIndex].image;
+    }
+
+    if (id === 4) {
+      return imgResultsSlides4[currentIndex].image;
+    }
+
+    if (id === 5) {
+      return imgResultsSlides5[currentIndex].image;
+    }
+  }
 
   return (
     <motion.div
@@ -157,7 +213,7 @@ const Result = ({ title, id, setShowTextBefore }) => {
         <img
           className="h-auto w-auto rounded-3xl"
           /* src={imgResultsSlides[currentIndex]?.image} */
-          src={imgResultsSlides1[currentIndex].image}
+          src={showImages()}
           alt={projectTitle}
         />
 
