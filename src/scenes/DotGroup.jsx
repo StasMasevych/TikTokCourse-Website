@@ -1,56 +1,64 @@
-import AnchorLink from "react-anchor-link-smooth-scroll";
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 const DotGroup = ({ selectedPage, setSelectedPage }) => {
   const selectedStyles = `relative bg-yellow before:absolute before:w-6 before:h-6 before:rounded-full
     before:border-2 before:border-yellow before:left-[-50%] before:top-[-50%]`;
 
   return (
-    <div className="flex flex-col gap-6 fixed top-[60%] right-7">
+    <div className="fixed top-[60%] right-7 flex flex-col gap-6">
       <AnchorLink
         href="#home"
         className={`${
-          selectedPage === "home" ? selectedStyles : "bg-dark-grey"
-        } w-3 h-3 rounded-full`}
-        onClick={() => setSelectedPage("home")}
+          selectedPage === 'home' ? selectedStyles : 'bg-dark-grey'
+        } h-3 w-3 rounded-full`}
+        onClick={() => setSelectedPage('home')}
       />
 
       <AnchorLink
-        href="#skills"
+        href="#про мене"
         className={`${
-          selectedPage === "skills" ? selectedStyles : "bg-dark-grey"
-        } w-3 h-3 rounded-full`}
-        onClick={() => setSelectedPage("skills")}
+          selectedPage === 'Про мене' ? selectedStyles : 'bg-dark-grey'
+        } h-3 w-3 rounded-full`}
+        onClick={() => setSelectedPage('Про мене')}
       />
       <AnchorLink
-        href="#course"
+        href="#курс"
         className={`${
-          selectedPage === "course" ? selectedStyles : "bg-dark-grey"
-        } w-3 h-3 rounded-full`}
-        onClick={() => setSelectedPage("course")}
-      />
-
-      <AnchorLink
-        href="#projects"
-        className={`${
-          selectedPage === "projects" ? selectedStyles : "bg-dark-grey"
-        } w-3 h-3 rounded-full`}
-        onClick={() => setSelectedPage("projects")}
+          selectedPage === 'Курс' ? selectedStyles : 'bg-dark-grey'
+        } h-3 w-3 rounded-full`}
+        onClick={() => setSelectedPage('Курс')}
       />
 
       <AnchorLink
-        href="#testimonials"
+        href="#результати"
         className={`${
-          selectedPage === "testimonials" ? selectedStyles : "bg-dark-grey"
-        } w-3 h-3 rounded-full`}
-        onClick={() => setSelectedPage("testimonials")}
+          selectedPage === 'Результати' ? selectedStyles : 'bg-dark-grey'
+        } h-3 w-3 rounded-full`}
+        onClick={() => setSelectedPage('Результати')}
       />
 
       <AnchorLink
-        href="#contact"
+        href="#відгуки"
         className={`${
-          selectedPage === "contact" ? selectedStyles : "bg-dark-grey"
-        } w-3 h-3 rounded-full`}
-        onClick={() => setSelectedPage("contact")}
+          selectedPage === 'Відгуки' ? selectedStyles : 'bg-dark-grey'
+        } h-3 w-3 rounded-full`}
+        onClick={() => setSelectedPage('Відгуки')}
+      />
+
+      <AnchorLink
+        href="#питання"
+        className={`${
+          selectedPage === 'Питання' ? selectedStyles : 'bg-dark-grey'
+        } h-3 w-3 rounded-full`}
+        onClick={() => setSelectedPage('Питання')}
+      />
+
+      <AnchorLink
+        href="#контакт"
+        className={`${
+          selectedPage === 'Контакт' ? selectedStyles : 'bg-dark-grey'
+        } h-3 w-3 rounded-full`}
+        onClick={() => setSelectedPage('Контакт')}
       />
     </div>
   );

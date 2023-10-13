@@ -232,7 +232,7 @@ const Results = () => {
 
   return (
     <section
-      id="projects"
+      id="результати"
       /* className="pt-28 pb-28 md:pt-28 pb-28 xxs:pt-28 pb-28 mt-0" */
       className="pt-18 pb-28 xxs:mt-0"
     >

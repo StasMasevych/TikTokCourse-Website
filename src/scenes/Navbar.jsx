@@ -1,16 +1,16 @@
-import { useState } from "react";
-import AnchorLink from "react-anchor-link-smooth-scroll";
-import useMediaQuery from "../hooks/useMediaQuery";
+import { useState } from 'react';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
+import useMediaQuery from '../hooks/useMediaQuery';
 
-import iconTikTok from "../assets/free-tiktok-3dlogo.webp";
+import iconTikTok from '../assets/free-tiktok-3dlogo.webp';
 
 const Link = ({ page, selectedPage, setSelectedPage }) => {
   const lowerCasePage = page.toLowerCase();
   return (
     <AnchorLink
       className={`${
-        selectedPage === lowerCasePage ? "text-yellow" : ""
-      } hover:text-yellow transition duration-500`}
+        selectedPage === lowerCasePage ? 'text-yellow' : ''
+      } transition duration-500 hover:text-yellow`}
       href={`#${lowerCasePage}`}
       onClick={() => setSelectedPage(lowerCasePage)}
     >
@@ -21,13 +21,13 @@ const Link = ({ page, selectedPage, setSelectedPage }) => {
 
 const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
   const [isMenuToggled, setIsMenuToggled] = useState(false);
-  const isDesktop = useMediaQuery("(min-width: 768px)");
-  const navbarBackground = isTopOfPage ? "" : "bg-red";
+  const isDesktop = useMediaQuery('(min-width: 768px)');
+  const navbarBackground = isTopOfPage ? '' : 'bg-red';
 
   return (
-    <nav className={`${navbarBackground} z-40 w-full fixed top-0 py-6`}>
-      <div className="flex items-center justify-between mx-auto w-5/6">
-        <div className="flex gap-2 w-2/6 lg:w-2/6 md: w-2/6 xs: w-3/6 items-center ">
+    <nav className={`${navbarBackground} fixed top-0 z-40 w-full py-6`}>
+      <div className="mx-auto flex w-5/6 items-center justify-between">
+        <div className="md: xs: flex w-2/6 w-2/6 w-3/6 items-center gap-2 lg:w-2/6 ">
           <div className="icon-box">
             <img src={iconTikTok} alt="icon" />
           </div>
@@ -39,32 +39,37 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
         {isDesktop ? (
           <div className="flex justify-between gap-16 font-opensans text-sm font-semibold">
             <Link
-              page="Home"
+              page=""
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
             />
             <Link
-              page="Skills"
+              page="Про мене"
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
             />
             <Link
-              page="Course"
+              page="Курс"
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
             />
             <Link
-              page="Projects"
+              page="Результати"
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
             />
             <Link
-              page="Testimonials"
+              page="Відгуки"
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
             />
             <Link
-              page="Contact"
+              page="Питання"
+              selectedPage={selectedPage}
+              setSelectedPage={setSelectedPage}
+            />
+            <Link
+              page="Контакт"
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
             />
@@ -80,7 +85,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
 
         {/* MOBILE MENU POPUP */}
         {!isDesktop && isMenuToggled && (
-          <div className="fixed right-0 bottom-0 h-full bg-blue w-[300px]">
+          <div className="fixed right-0 bottom-0 h-full w-[300px] bg-blue">
             {/* CLOSE ICON */}
             <div className="flex justify-end p-12">
               <button onClick={() => setIsMenuToggled(!isMenuToggled)}>
@@ -89,34 +94,39 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
             </div>
 
             {/* MENU ITEMS */}
-            <div className="flex flex-col gap-10 ml-[33%] text-2xl text-deep-blue">
+            <div className="ml-[33%] flex flex-col gap-10 text-2xl text-deep-blue">
               <Link
-                page="Home"
+                page=""
                 selectedPage={selectedPage}
                 setSelectedPage={setSelectedPage}
               />
               <Link
-                page="Skills"
+                page="Про мене"
                 selectedPage={selectedPage}
                 setSelectedPage={setSelectedPage}
               />
               <Link
-                page="Course"
+                page="Курс"
                 selectedPage={selectedPage}
                 setSelectedPage={setSelectedPage}
               />
               <Link
-                page="Projects"
+                page="Результати"
                 selectedPage={selectedPage}
                 setSelectedPage={setSelectedPage}
               />
               <Link
-                page="Testimonials"
+                page="Відгуки"
                 selectedPage={selectedPage}
                 setSelectedPage={setSelectedPage}
               />
               <Link
-                page="Contact"
+                page="Питання"
+                selectedPage={selectedPage}
+                setSelectedPage={setSelectedPage}
+              />
+              <Link
+                page="Контакт"
                 selectedPage={selectedPage}
                 setSelectedPage={setSelectedPage}
               />

@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 export default function MyCourse() {
   return (
-    <section id="course" className="xxs:pt-32 xxs:pb-28">
+    <section id="курс" className="xxs:pt-32 xxs:pb-28">
       {/* HEADING */}
       <motion.div
         className="md:w-1/3 md:text-left lg:w-full"
@@ -16,7 +16,7 @@ export default function MyCourse() {
           visible: { opacity: 1, x: 0 },
         }}
       >
-        <p className=" mb-5 text-center font-playfair text-4xl font-semibold lg:mt-40">
+        <p className=" mb-5 text-center font-playfair text-4xl font-semibold">
           Знайомтесь з моїм <span className="text-red">ТікТок курсом 🤩</span>
         </p>
         {/* <p className="lg:mt-40 text-center font-playfair font-semibold text-4xl mb-5 text-red"></p> */}

@@ -60,7 +60,7 @@ function App() {
         <motion.div
           margin="0 0 -200px 0"
           amount="all"
-          onViewportEnter={() => setSelectedPage('skills')}
+          onViewportEnter={() => setSelectedPage('Про мене')}
         >
           <MySkills />
         </motion.div>
@@ -71,7 +71,7 @@ function App() {
         <motion.div
           margin="0 0 -200px 0"
           amount="all"
-          onViewportEnter={() => setSelectedPage('course')}
+          onViewportEnter={() => setSelectedPage('Курс')}
         >
           <MyCourse />
         </motion.div>
@@ -82,7 +82,7 @@ function App() {
         <motion.div
           margin="0 0 -200px 0"
           amount="all"
-          onViewportEnter={() => setSelectedPage('projects')}
+          onViewportEnter={() => setSelectedPage('Результати')}
         >
           <Results />
           {/* <Projects /> */}
@@ -93,7 +93,7 @@ function App() {
         <motion.div
           margin="0 0 -200px 0"
           amount="all"
-          onViewportEnter={() => setSelectedPage('testimonials')}
+          onViewportEnter={() => setSelectedPage('Відгуки')}
         >
           {/* <Testimonials /> */}
           <MyTestimonials />
@@ -103,7 +103,7 @@ function App() {
         <motion.div
           margin="0 0 -200px 0"
           amount="all"
-          onViewportEnter={() => setSelectedPage('Q&A')}
+          onViewportEnter={() => setSelectedPage('Питання')}
         >
           <QuestionsAndAnswers />
         </motion.div>
@@ -112,7 +112,7 @@ function App() {
         <motion.div
           margin="0 0 -200px 0"
           amount="all"
-          onViewportEnter={() => setSelectedPage('contact')}
+          onViewportEnter={() => setSelectedPage('Контакт')}
         >
           <Contact />
         </motion.div>

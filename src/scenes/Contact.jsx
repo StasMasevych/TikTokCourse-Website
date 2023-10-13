@@ -18,7 +18,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="contact pt-18 pb-18 mb-10">
+    <section id="контакт" className="contact pt-18 pb-18 mb-10">
       {/* HEADINGS */}
       <motion.div
         initial="hidden"

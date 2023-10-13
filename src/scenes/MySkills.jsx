@@ -8,10 +8,10 @@ import imgProfile from '../assets/tiktok-my-results.jpeg';
 const MySkills = () => {
   const isAboveLarge = useMediaQuery('(min-width: 1060px)');
   return (
-    <section id="skills" className="pt-32 pb-24">
+    <section id="про мене" className="pt-10 pb-24">
       {/* pt-10 pb-24 */}
       {/* HEADER AND IMAGE SECTION */}
-      <div className="md:flex md:justify-between md:gap-16 ">
+      <div className="md:flex md:justify-between md:gap-16">
         {/* mt-32 */}
         <motion.div
           className="md:w-1/3"

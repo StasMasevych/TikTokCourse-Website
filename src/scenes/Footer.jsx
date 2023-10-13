@@ -1,15 +1,16 @@
-import SocialMediaIcons from "../components/SocialMediaIcons";
+import SocialMediaIcons from '../components/SocialMediaIcons';
 
 const Footer = () => {
   return (
     <footer className="h-64 bg-red pt-10">
-      <div className="w-10/12 mx-auto">
+      <div className="mx-auto w-10/12">
+        {/* w-10/12  */}
         <SocialMediaIcons />
-        <div className="md:flex justify-center md:justify-between text-center ">
-          <p className="font-playfair font-semibold text-2xl text-yellow">
+        <div className="justify-center text-center md:flex md:justify-between ">
+          <p className="font-playfair text-2xl font-semibold text-yellow">
             JANE ESPER
           </p>
-          <p className="font-playfair text-md text-yellow">
+          <p className="text-md font-playfair text-yellow">
             ©2022 ESPER. All Rights Reserved.
           </p>
         </div>

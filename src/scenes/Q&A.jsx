@@ -34,9 +34,9 @@ function QuestionsAndAnswers() {
   const [curOpen, setCurOpen] = useState(null);
 
   return (
-    <section id="projects" className="mt-0 pt-28">
+    <section id="питання" className="mt-0 pt-28">
       <motion.div
-        className="mx-auto text-center md:w-2/5 lg:mt-20"
+        className="mx-auto text-center md:w-2/5 "
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.5 }}
