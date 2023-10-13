@@ -146,7 +146,7 @@ body, /* {
 
 .content-box {
   grid-column: 2 / -1;
-  padding-bottom: 16px;
+  padding-bottom: 18px;
   line-height: 1.6;
 }
 
@@ -168,4 +168,15 @@ body, /* {
 .open .number,
 .open .title {
   color: #ff45a4;
+}
+
+@media (max-width: 575.98px) {
+  .title,
+  .icon {
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .content-box {
+    font-size: 14px;
+  }
 }
