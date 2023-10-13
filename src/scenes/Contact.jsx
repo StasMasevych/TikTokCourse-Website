@@ -33,7 +33,8 @@ const Contact = () => {
       >
         <div>
           <p className="font-playfair text-4xl font-semibold">
-            <span className="text-yellow">CONTACT ME</span> TO GET STARTED
+            <span className="text-yellow">Отримай</span> безкоштовну
+            консультацію ! 🙌
           </p>
           <div className="my-5 flex md:justify-end">
             <LineGradient width="w-1/2" />
@@ -77,7 +78,7 @@ const Contact = () => {
             <input
               className="w-full bg-blue p-3 font-semibold placeholder-opaque-black"
               type="text"
-              placeholder="NAME"
+              placeholder="Ім'я та прізвище"
               {...register('name', {
                 required: true,
                 maxLength: 100,
@@ -93,7 +94,7 @@ const Contact = () => {
             <input
               className="mt-5 w-full bg-blue p-3 font-semibold placeholder-opaque-black"
               type="text"
-              placeholder="EMAIL"
+              placeholder="Email"
               {...register('email', {
                 required: true,
                 pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
@@ -106,10 +107,26 @@ const Contact = () => {
               </p>
             )}
 
+            <input
+              className="mt-5 w-full bg-blue p-3 font-semibold placeholder-opaque-black"
+              type="text"
+              placeholder="Номер телефону"
+              {...register('name', {
+                required: true,
+                maxLength: 100,
+              })}
+            />
+            {errors.name && (
+              <p className="mt-1 text-red">
+                {errors.name.type === 'required' && 'This field is required.'}
+                {errors.name.type === 'maxLength' && 'Max length is 100 char.'}
+              </p>
+            )}
+
             <textarea
               className="mt-5 w-full bg-blue p-3 font-semibold placeholder-opaque-black"
               name="message"
-              placeholder="MESSAGE"
+              placeholder="Опишіть Ваше питання з якого потрібна консультація"
               rows="4"
               cols="50"
               {...register('message', {
@@ -130,7 +147,7 @@ const Contact = () => {
               className="mt-5 bg-yellow p-5 font-semibold text-deep-blue transition duration-500 hover:bg-red hover:text-white"
               type="submit"
             >
-              SEND ME A MESSAGE
+              ВІДПРАВИТИ
             </button>
           </form>
         </motion.div>

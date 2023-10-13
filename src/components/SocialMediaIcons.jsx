@@ -1,38 +1,56 @@
+import { SocialIcon } from 'react-social-icons';
+
 const SocialMediaIcons = () => {
   return (
-    <div className="flex justify-center md:justify-start my-10 gap-7">
-      <a
-        className="hover:opacity-50 transition duration-500"
-        href="https://www.linkedin.com"
+    <div className="my-10 flex justify-center gap-7 md:justify-start">
+      <div
+        className="transition duration-500 hover:opacity-50"
+        /*  href="https://www.linkedin.com" */
         target="_blank"
         rel="noreferrer"
       >
-        <img alt="linkedin-link" src="../assets/linkedin.png" />
-      </a>
-      <a
-        className="hover:opacity-50 transition duration-500"
-        href="https://www.twitter.com"
+        <SocialIcon
+          network="tiktok"
+          url="https://www.tiktok.com/@xomaa666"
+          style={{ height: 46, width: 46 }}
+        />
+      </div>
+      <div
+        className="transition duration-500 hover:opacity-50"
+        /* href="https://www.twitter.com" */
         target="_blank"
         rel="noreferrer"
       >
-        <img alt="twitter-link" src="../assets/twitter.png" />
-      </a>
-      <a
-        className="hover:opacity-50 transition duration-500"
-        href="https://www.facebook.com"
+        <SocialIcon
+          network="instagram"
+          url="https://www.tiktok.com/@xomaa666"
+          style={{ height: 46, width: 46 }}
+        />
+      </div>
+      <div
+        className="transition duration-500 hover:opacity-50"
+        /* href="https://www.facebook.com" */
         target="_blank"
         rel="noreferrer"
       >
-        <img alt="facebook-link" src="../assets/facebook.png" />
-      </a>
-      <a
-        className="hover:opacity-50 transition duration-500"
-        href="https://www.instagram.com"
+        <SocialIcon
+          network="facebook"
+          url="https://www.tiktok.com/@xomaa666"
+          style={{ height: 46, width: 46 }}
+        />
+      </div>
+      <div
+        className="transition duration-500 hover:opacity-50"
+        /*  href="https://www.instagram.com" */
         target="_blank"
         rel="noreferrer"
       >
-        <img alt="instagram-link" src="../assets/instagram.png" />
-      </a>
+        <SocialIcon
+          network="telegram"
+          url="https://www.tiktok.com/@xomaa666"
+          style={{ height: 46, width: 46 }}
+        />
+      </div>
     </div>
   );
 };

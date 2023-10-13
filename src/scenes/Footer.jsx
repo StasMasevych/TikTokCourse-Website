@@ -8,10 +8,10 @@ const Footer = () => {
         <SocialMediaIcons />
         <div className="justify-center text-center md:flex md:justify-between ">
           <p className="font-playfair text-2xl font-semibold text-yellow">
-            JANE ESPER
+            ТікТок Курс
           </p>
           <p className="text-md font-playfair text-yellow">
-            ©2022 ESPER. All Rights Reserved.
+            ©2023 ТікТок Курс. Всі права захищено
           </p>
         </div>
       </div>

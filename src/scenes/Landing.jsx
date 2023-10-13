@@ -1,44 +1,44 @@
-import SocialMediaIcons from "../components/SocialMediaIcons";
-import useMediaQuery from "../hooks/useMediaQuery";
-import { motion } from "framer-motion";
-import AnchorLink from "react-anchor-link-smooth-scroll";
+import SocialMediaIcons from '../components/SocialMediaIcons';
+import useMediaQuery from '../hooks/useMediaQuery';
+import { motion } from 'framer-motion';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 /* const img =
   "https://mail.google.com/mail/u/0?ui=2&ik=34e704a98e&attid=0.1&permmsgid=msg-a:r8694891675252838291&th=18a7a3c4c99c91a9&view=fimg&fur=ip&sz=s0-l75-ft&attbid=ANGjdJ_HyWUiKK8tLujWFpgvFZ7YnwWhFdnD-kydWIeM55IlXvm7W7d4DfgEYn9wK0ZXK2mWyNoPAcJ0qlkzic7qds5EMJrhrhmVSUPwmESLAyeZhv7b8N8wuecBiss&disp=emb&realattid=18a7a3c40c260d3e82c1"; */
 
-import profileImg from "../assets/lera.png";
+import profileImg from '../assets/lera.png';
 
 const Landing = ({ setSelectedPage }) => {
-  const isAboveLarge = useMediaQuery("(min-width: 1060px)");
+  const isAboveLarge = useMediaQuery('(min-width: 1060px)');
   return (
     <section
       id="home"
-      className="md:flex md:justify-between md:items-center gap-16 md:h-full py-10"
+      className="gap-16 py-10 md:flex md:h-full md:items-center md:justify-between"
     >
       {/* IMAGE SECTION */}
-      <div className="basis-3/5 z-10 mt-16 md:mt-32 flex justify-center md:order-2">
+      <div className="z-10 mt-16 flex basis-3/5 justify-center md:order-2 md:mt-32">
         {isAboveLarge ? (
           <div
-            className="relative z-0 ml-20 before:absolute before:-top-20 before:-left-20 before:rounded-t-[400px]
-            before:w-full before:max-w-[400px] md:before:max-w-[600px] before:h-full before:border-2 before:border-blue before:z-[-1]"
+            className="relative z-0 ml-20 before:absolute before:-top-20 before:-left-20 before:z-[-1]
+            before:h-full before:w-full before:max-w-[400px] before:rounded-t-[400px] before:border-2 before:border-blue md:before:max-w-[600px]"
           >
             <img
               alt="profile"
-              className="h-[36rem] hover:filter hover:saturate-150 transition duration-500 z-10 w-full max-w-[400px] md:max-w-[600px] rounded-lg"
+              className="z-10 h-[36rem] w-full max-w-[400px] rounded-lg transition duration-500 hover:saturate-150 hover:filter md:max-w-[600px]"
               src={profileImg}
             />
           </div>
         ) : (
           <img
             alt="profile"
-            className="z-10 w-full max-w-[400px] md:max-w-[600px] rounded-lg"
+            className="z-10 w-full max-w-[400px] rounded-lg md:max-w-[600px]"
             src={profileImg}
           />
         )}
       </div>
 
       {/* MAIN TEXT */}
-      <div className="z-30 basis-2/5 mt-12 md:mt-32">
+      <div className="z-30 mt-12 basis-2/5 md:mt-32">
         {/* HEADINGS */}
         <motion.div
           initial="hidden"
@@ -50,19 +50,19 @@ const Landing = ({ setSelectedPage }) => {
             visible: { opacity: 1, x: 0 },
           }}
         >
-          <p className="text-6xl font-playfair z-10 text-center md:text-start">
+          <p className="z-10 text-center font-playfair text-6xl md:text-start">
             <div className="hero__textblock">
               <p>TikToker</p>
               <div
-                className="xxs:relative xxs:text-deep-blue xxs:font-semibold z-20 xxs:before:content-brush
-                before:absolute before:-left-[45px] before:-top-[70px] before:z-[-1] "
+                className="z-20 before:absolute before:-left-[45px] before:-top-[70px] before:z-[-1]
+                xxs:relative xxs:font-semibold xxs:text-deep-blue xxs:before:content-brush "
               >
                 <a href="https://www.tiktok.com/@xomaa666">Хома</a>
               </div>
             </div>
           </p>
 
-          <p className="mt-10 mb-7 text-lg text-center md:text-start">
+          <p className="mt-10 mb-7 text-center text-lg md:text-start">
             Навчу заробляти 2000$ з ТікТоку з 0❗️підписників та особисто
             допоможу вивести твоє кожне відео у РЕК!🔥
           </p>
@@ -70,7 +70,7 @@ const Landing = ({ setSelectedPage }) => {
 
         {/* CALL TO ACTIONS */}
         <motion.div
-          className="flex mt-5 justify-center md:justify-start"
+          className="mt-5 flex justify-center md:justify-start"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
@@ -81,19 +81,19 @@ const Landing = ({ setSelectedPage }) => {
           }}
         >
           <AnchorLink
-            className="bg-gradient-rainblue text-deep-blue rounded-sm py-3 px-7 font-semibold
-              hover:bg-blue hover:text-white transition duration-500"
-            onClick={() => setSelectedPage("contact")}
+            className="rounded-sm bg-gradient-rainblue py-3 px-7 font-semibold text-deep-blue
+              transition duration-500 hover:bg-blue hover:text-white"
+            onClick={() => setSelectedPage('contact')}
             href="#contact"
           >
             Придбати
           </AnchorLink>
           <AnchorLink
             className="rounded-r-sm bg-gradient-rainblue py-0.5 pr-0.5"
-            onClick={() => setSelectedPage("contact")}
-            href="#contact"
+            onClick={() => setSelectedPage('contact')}
+            href="#контакт"
           >
-            <div className="bg-deep-blue hover:text-red transition duration-500 w-full h-full flex items-center justify-center px-10 font-playfair">
+            <div className="flex h-full w-full items-center justify-center bg-deep-blue px-10 font-playfair transition duration-500 hover:text-red">
               Безкоштовна Консультація
             </div>
           </AnchorLink>
@@ -110,7 +110,7 @@ const Landing = ({ setSelectedPage }) => {
         </motion.div>
 
         <motion.div
-          className="flex mt-5 justify-center md:justify-start"
+          className="mt-5 flex justify-center md:justify-start"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
