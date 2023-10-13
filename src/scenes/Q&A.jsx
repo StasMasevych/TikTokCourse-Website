@@ -36,7 +36,7 @@ function QuestionsAndAnswers() {
   return (
     <section id="питання" className="mt-0 pt-28">
       <motion.div
-        className="mx-auto text-center md:w-2/5 "
+        className="mx-auto text-center md:w-4/5 "
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.5 }}
