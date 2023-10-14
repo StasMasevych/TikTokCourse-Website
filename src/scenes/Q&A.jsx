@@ -70,6 +70,7 @@ function QuestionsAndAnswers() {
           </div>
         </div>
       </motion.div>
+
       <motion.div
         className="flex justify-center"
         initial="hidden"
