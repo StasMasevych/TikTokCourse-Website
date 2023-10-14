@@ -240,7 +240,7 @@ const Results = () => {
         confettiRadius: 1,
         confettiColors: ['#000', 'hotpink', 'gold'],
         confettiNumber: 100,
-        emojis: ['🎉', '⚡️', '💥', '✨', '💫', '🌸'],
+        emojis: ['🎉', '🔥', '💥', '✨', '💫', '💜'],
         emojiSize: 100,
       });
     }
