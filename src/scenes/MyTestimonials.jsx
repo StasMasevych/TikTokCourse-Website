@@ -29,7 +29,7 @@ const MyTestimonials = () => {
       <div className="gap-8 md:flex md:flex-wrap md:justify-between">
         <motion.div
           className="relative mx-auto mt-48 flex h-[350px] basis-1/4 flex-col justify-end bg-blue
-            before:absolute before:left-1/2 before:-ml-[110px] before:content-person1 xxs:p-12 xxs:before:top-[-120px] md:p-8 md:before:top-[-170px] "
+            before:absolute before:left-1/2 before:-ml-[110px] before:content-person1 xxs:p-12 xxs:before:top-[-140px] md:p-8 md:before:top-[-170px] "
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
@@ -40,7 +40,7 @@ const MyTestimonials = () => {
           }}
         >
           <p className="font-playfair text-6xl">“</p>
-          <p className="md: text-center text-sm ">
+          <p className="xxs:text-md text-center md:text-sm">
             Привіт! нарешті мій тік ток прийшов до тями після твого курсу 🥰 а
             то відео набирали до 300 переглядів і ставало все сумніше. Дуже
             тішусь☺️ думаю після консультації буде ще крутіший результат 🥰 Дуже
@@ -50,7 +50,7 @@ const MyTestimonials = () => {
 
         <motion.div
           className="relative mx-auto mt-48 flex h-[350px] basis-1/4 flex-col justify-end bg-red
-            before:absolute before:left-1/2 before:-ml-[110px] before:content-person2 xxs:p-16 xxs:before:top-[-120px] md:p-14 md:before:top-[-170px] "
+            before:absolute before:left-1/2 before:-ml-[110px] before:content-person2 xxs:p-16 xxs:before:top-[-140px] md:p-14 md:before:top-[-170px] "
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
@@ -61,7 +61,7 @@ const MyTestimonials = () => {
           }}
         >
           <p className="font-playfair text-6xl">“</p>
-          <p className="md: text-center text-sm">
+          <p className="xxs:text-md text-center md:text-sm">
             Привіт!🥰 Прочитала находу курс, просто по алгоритму записала відео,
             витратила 5 хвилин 😂 І що ти думаєш - 40К 😂 я в шоці Дяяяякую!!!
           </p>
@@ -69,7 +69,7 @@ const MyTestimonials = () => {
 
         <motion.div
           className="relative mx-auto mt-48 flex h-[350px] basis-1/4 flex-col justify-end bg-yellow
-            before:absolute before:left-1/2 before:-ml-[110px] before:content-person3 xxs:p-16 xxs:before:top-[-120px] md:p-11 md:before:top-[-170px] "
+            before:absolute before:left-1/2 before:-ml-[110px] before:content-person3 xxs:p-12 xxs:before:top-[-140px] md:p-11 md:before:top-[-170px] "
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
@@ -80,7 +80,7 @@ const MyTestimonials = () => {
           }}
         >
           <p className="font-playfair text-6xl">“</p>
-          <p className="md: text-center text-sm">
+          <p className="xxs:text-md text-center md:text-sm">
             Привіт✨ Прочитала твій Курс вже кілька раз, і ні разу не
             пожалкувала, що взяла 🙂 Все розжовано по полочках, інформації куча,
             стільки фішок. Брати варто 100 проц👍🥰
@@ -89,7 +89,7 @@ const MyTestimonials = () => {
 
         <motion.div
           className="before:content-person4 relative mx-auto mt-48 flex h-[350px] basis-1/4 flex-col justify-end
-            bg-blue before:absolute before:left-1/2 before:-ml-[110px] xxs:p-10 xxs:before:top-[-120px] md:p-6 md:before:top-[-170px] "
+            bg-blue before:absolute before:left-1/2 before:-ml-[110px] xxs:p-2 xxs:before:top-[-140px] md:p-6 md:before:top-[-170px] "
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
@@ -100,7 +100,7 @@ const MyTestimonials = () => {
           }}
         >
           <p className="font-playfair text-6xl">“</p>
-          <p className="md: text-center text-sm">
+          <p className="xxs:text-md text-center md:text-sm">
             Хочу записати чесний відгук про Курс по тіктоку 🤭 Дуже
             інформативно, все з прикладами, що дуже круто 🔥 одразу розумієш що
             і до чого 👍🏻 Багато цікавинок, які я не знала про ТТ, тому вже за
@@ -111,7 +111,7 @@ const MyTestimonials = () => {
 
         <motion.div
           className="before:content-person5 relative mx-auto mt-48 flex h-[350px] basis-1/4 flex-col justify-end
-            bg-red before:absolute before:left-1/2 before:-ml-[110px] xxs:p-4 xxs:before:top-[-120px] md:p-2 md:before:top-[-170px] "
+            bg-red before:absolute before:left-1/2 before:-ml-[110px] xxs:p-2 xxs:before:top-[-140px] md:p-2 md:before:top-[-170px] "
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
@@ -122,7 +122,7 @@ const MyTestimonials = () => {
           }}
         >
           <p className="font-playfair text-6xl">“</p>
-          <p className="md: text-center text-sm">
+          <p className="xxs:text-md md:text-center md:text-sm">
             Лера, доброго дня 🙂 Побачила відгуки та згадала що нічого не писала
             🙂 Довго не могла потрапити в рек, пробувала, але все не те Були мої
             помилки та коли відео залетіли, то зрозуміла що зробила все по твоїм
@@ -134,7 +134,7 @@ const MyTestimonials = () => {
 
         <motion.div
           className="before:content-person6 relative mx-auto mt-48 flex h-[350px] basis-1/4 flex-col justify-end
-            bg-yellow before:absolute before:left-1/2 before:-ml-[110px] xxs:p-2 xxs:before:top-[-120px] md:p-2 md:before:top-[-170px] "
+            bg-yellow before:absolute before:left-1/2 before:-ml-[110px] xxs:p-2 xxs:before:top-[-140px] md:p-6 md:before:top-[-170px] "
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
