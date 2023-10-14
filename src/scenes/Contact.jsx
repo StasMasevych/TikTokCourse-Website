@@ -1,6 +1,10 @@
 import LineGradient from '../components/LineGradient';
 import { useForm } from 'react-hook-form';
 import { motion } from 'framer-motion';
+/* import JSConfetti from 'js-confetti'; */
+
+import 'react-phone-number-input/style.css';
+import PhoneInput from 'react-phone-number-input';
 
 const Contact = () => {
   const {
@@ -9,8 +13,14 @@ const Contact = () => {
     formState: { errors },
   } = useForm();
 
+  /*   const jsConfetti = new JSConfetti(); */
+
   const onSubmit = async (e) => {
     console.log('~ e', e);
+    /* fireConfetti(); */
+    /* jsConfetti.addConfetti({
+      emojis: ['🌈', '⚡️', '💥', '✨', '💫', '🌸'],
+    }); */
     const isValid = await trigger();
     if (!isValid) {
       e.preventDefault();
@@ -76,7 +86,7 @@ const Contact = () => {
             method="POST"
           >
             <input
-              className="w-full bg-blue p-3 font-semibold placeholder-opaque-black"
+              className="w-full bg-blue p-3 font-semibold"
               type="text"
               placeholder="Ім'я та прізвище"
               {...register('name', {
@@ -92,7 +102,7 @@ const Contact = () => {
             )}
 
             <input
-              className="mt-5 w-full bg-blue p-3 font-semibold placeholder-opaque-black"
+              className="mt-5 w-full bg-blue p-3 font-semibold"
               type="text"
               placeholder="Email"
               {...register('email', {
@@ -107,9 +117,10 @@ const Contact = () => {
               </p>
             )}
 
-            <input
-              className="mt-5 w-full bg-blue p-3 font-semibold placeholder-opaque-black"
-              type="text"
+            <PhoneInput
+              className="mt-5 w-full bg-blue p-3 font-semibold"
+              /* type="number" */
+              defaultCountry="UA"
               placeholder="Номер телефону"
               {...register('name', {
                 required: true,
@@ -124,7 +135,7 @@ const Contact = () => {
             )}
 
             <textarea
-              className="mt-5 w-full bg-blue p-3 font-semibold placeholder-opaque-black"
+              className="mt-5 w-full bg-blue p-3 font-semibold"
               name="message"
               placeholder="Опишіть Ваше питання з якого потрібна консультація"
               rows="4"

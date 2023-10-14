@@ -3,6 +3,8 @@ import { motion } from 'framer-motion';
 import { BsChevronCompactLeft, BsChevronCompactRight } from 'react-icons/bs';
 import { RxDotFilled } from 'react-icons/rx';
 
+import JSConfetti from 'js-confetti';
+
 import LineGradient from '../components/LineGradient';
 
 //images
@@ -229,6 +231,21 @@ const Result = ({ title, id, setShowTextBefore }) => {
 
 const Results = () => {
   const [showTextBefore, setShowTextBefore] = useState(false);
+
+  const jsConfetti = new JSConfetti();
+
+  useEffect(() => {
+    function fireConfetti() {
+      jsConfetti.addConfetti({
+        confettiRadius: 1,
+        confettiColors: ['#000', 'hotpink', 'gold'],
+        confettiNumber: 100,
+        emojis: ['🌈', '⚡️', '💥', '✨', '💫', '🌸'],
+        emojiSize: 100,
+      });
+    }
+    fireConfetti();
+  }, []);
 
   return (
     <section

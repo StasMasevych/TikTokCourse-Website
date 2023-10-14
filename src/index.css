@@ -180,3 +180,20 @@ body, /* {
     font-size: 14px;
   }
 }
+
+/* Contact */
+
+input {
+  background-color: rgb(44 188 233);
+}
+
+/* for Phone input */
+input::placeholder {
+  color: white;
+  opacity: 0.5; /* Firefox */
+}
+
+textarea::placeholder {
+  color: white;
+  opacity: 0.5; /* Firefox */
+}
