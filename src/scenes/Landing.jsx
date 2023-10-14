@@ -3,6 +3,7 @@ import useMediaQuery from '../hooks/useMediaQuery';
 import { motion } from 'framer-motion';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 
+import { customersImgs } from '../data/data-customers/data-customers';
 /* const img =
   "https://mail.google.com/mail/u/0?ui=2&ik=34e704a98e&attid=0.1&permmsgid=msg-a:r8694891675252838291&th=18a7a3c4c99c91a9&view=fimg&fur=ip&sz=s0-l75-ft&attbid=ANGjdJ_HyWUiKK8tLujWFpgvFZ7YnwWhFdnD-kydWIeM55IlXvm7W7d4DfgEYn9wK0ZXK2mWyNoPAcJ0qlkzic7qds5EMJrhrhmVSUPwmESLAyeZhv7b8N8wuecBiss&disp=emb&realattid=18a7a3c40c260d3e82c1"; */
 
@@ -110,7 +111,28 @@ const Landing = ({ setSelectedPage }) => {
         </motion.div>
 
         <motion.div
-          className="mt-5 flex justify-center md:justify-start"
+          className="flex justify-center md:justify-start"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ delay: 0.4, duration: 0.5 }}
+          variants={{
+            hidden: { opacity: 0, x: -50 },
+            visible: { opacity: 1, x: 0 },
+          }}
+        >
+          <div className="hero__customers">
+            <div className="hero__customers-images">
+              {customersImgs.map((el) => {
+                return <img src={el.img} alt="customer" />;
+              })}
+            </div>
+            <h4>100+ учнів, що вже відчули ефект курсу!🔥</h4>
+          </div>
+        </motion.div>
+
+        <motion.div
+          className="flex justify-center md:justify-start"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
