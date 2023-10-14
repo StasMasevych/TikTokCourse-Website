@@ -49,6 +49,10 @@ body, /* {
     flex-wrap: wrap;
   }
 
+  .hero__customers {
+    gap: 5rem;
+  }
+
   .hero__customers-images img {
     height: 2.6rem;
     width: 2.6rem;
