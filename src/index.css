@@ -53,6 +53,10 @@ body, /* {
     gap: 5rem;
   }
 
+  .hero__customers h4 {
+    font-size: 14px;
+  }
+
   .hero__customers-images img {
     height: 2.6rem;
     width: 2.6rem;
