@@ -1,6 +1,7 @@
 import LineGradient from '../components/LineGradient';
 import useMediaQuery from '../hooks/useMediaQuery';
 import { motion } from 'framer-motion';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 /* import imgProfile from "../assets/tiktok-gallery5.png"; */
 import imgProfile from '../assets/tiktok-my-results.jpeg';
@@ -150,6 +151,26 @@ const MySkills = () => {
           </p>
         </motion.div>
       </div>
+      <motion.div
+        className="flex justify-center"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.5 }}
+        transition={{ delay: 0.4, duration: 0.5 }}
+        variants={{
+          hidden: { opacity: 0, y: 50 },
+          visible: { opacity: 1, y: 0 },
+        }}
+      >
+        <AnchorLink
+          className="mt-10 block rounded-full bg-gradient-rainblue py-3 px-7 text-center text-xl font-semibold text-deep-blue transition duration-500
+              hover:bg-blue hover:text-white xxs:w-2/3 sm:w-2/6"
+          href="#payment"
+          text-xl
+        >
+          Придбати курс
+        </AnchorLink>
+      </motion.div>
     </section>
   );
 };

@@ -84,7 +84,7 @@ const Landing = ({ setSelectedPage }) => {
             className="rounded-sm bg-gradient-rainblue py-3 px-7 font-semibold text-deep-blue
               transition duration-500 hover:bg-blue hover:text-white"
             onClick={() => setSelectedPage('contact')}
-            href="#contact"
+            href="#payment"
           >
             Придбати
           </AnchorLink>
