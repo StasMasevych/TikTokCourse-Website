@@ -83,7 +83,7 @@ const MySkills = () => {
                 💰 Заробіток з 0 грн до 2 000 $ за пів року під час війни
               </p>
             </div>
-            <div className="absolute right-0 top-0 z-[-1] h-32 w-1/2 bg-blue md:w-3/4" />
+            {/* <div className="absolute right-0 top-0 z-[-1] h-32 w-1/2 bg-blue md:w-3/4" /> */}
             {/* "w-1/2 md:w-3/4 h-32 bg-blue absolute right-0 top-0 z-[-1]" */}
           </div>
           <p className="mt-5">
@@ -114,13 +114,13 @@ const MySkills = () => {
                 ⭐️ Співпраця з відомими брендами та медіа
               </p>
             </div>
-            <div className="absolute right-0 top-0 z-[-1] h-32 w-1/2 bg-red md:w-3/4" />
+            {/* <div className="absolute right-0 top-0 z-[-1] h-32 w-1/2 bg-red md:w-3/4" /> */}
           </div>
           <p className="mt-5">
             ParfumCity, RAKETA, Binance, Cococard, Yezzy Salon,
             AppleDreamUkraine; Треки: Злата Огнєвіч, Леся Кава, тисячі
             комерційних замовлень та вигідних бартерів (меблі, комплекси
-            відпочинку, салони, ресторани, одяг, міроприємства)
+            відпочинку, салони, ресторани, одяг, міроприємства) 💃
           </p>
         </motion.div>
         {/* IMAGINATIVE */}
@@ -143,7 +143,7 @@ const MySkills = () => {
                 🥳 Впізнаваність та популярність
               </p>
             </div>
-            <div className="absolute right-0 top-0 z-[-1] h-32 w-1/2 bg-yellow md:w-3/4" />
+            {/* <div className="absolute right-0 top-0 z-[-1] h-32 w-1/2 bg-yellow md:w-3/4" /> */}
           </div>
           <p className="mt-5">
             В ТікТоці стати зіркою зараз супер просто і швидко! Ловіть момент!
