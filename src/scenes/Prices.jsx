@@ -4,7 +4,7 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 function Prices() {
   return (
-    <section id="питання" className="pt-18">
+    <section id="ціни" className="pt-18">
       <div className="prices">
         <div className="text-center">
           <p className="text font-playfair text-4xl font-semibold">

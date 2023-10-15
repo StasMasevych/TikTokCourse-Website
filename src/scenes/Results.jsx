@@ -269,7 +269,7 @@ const Results = () => {
         <div>
           <div>
             <p className="font-playfair text-4xl font-semibold">
-              <span className="text-red">РЕЗ</span>УЛЬТАТИ
+              <span className="text-red">РЕЗ</span>УЛЬТАТИ УЧНІВ
             </p>
             <div className="mt-5 flex justify-center">
               <LineGradient width="w-2/3" />
