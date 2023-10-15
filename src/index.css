@@ -357,7 +357,7 @@ textarea::placeholder {
     /* color: #cf711f; */
     color: #ff45a4;
     font-weight: 600;
-    font-size: 2rem;
+    font-size: 1.6rem;
     text-align: center;
   }
 
@@ -365,7 +365,7 @@ textarea::placeholder {
     display: block;
     text-align: center;
     font-weight: 600;
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: #fff;
   }
 
