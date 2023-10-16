@@ -114,7 +114,7 @@ function App() {
         <motion.div
           margin="0 0 -200px 0"
           amount="all"
-          onViewportEnter={() => setSelectedPage('Питання')}
+          onViewportEnter={() => setSelectedPage('Ціни')}
         >
           <Prices />
         </motion.div>
@@ -124,7 +124,7 @@ function App() {
         <motion.div
           margin="0 0 -200px 0"
           amount="all"
-          onViewportEnter={() => setSelectedPage('Ціни')}
+          onViewportEnter={() => setSelectedPage('Контакт')}
         >
           <Contact />
         </motion.div>
