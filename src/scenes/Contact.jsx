@@ -6,6 +6,8 @@ import { motion } from 'framer-motion';
 import 'react-phone-number-input/style.css';
 import PhoneInput from 'react-phone-number-input';
 
+import contactImage from '../assets/contact_image.jpg';
+
 const Contact = () => {
   const {
     register,
@@ -66,6 +68,13 @@ const Contact = () => {
           className="flex basis-1/2 justify-center"
         >
           <img src="../assets/contact-image.jpeg" alt="contact" />
+          <div className="">
+            <img
+              /* className="h-[26rem] w-[20rem]" */
+              src={contactImage}
+              alt="contact"
+            />
+          </div>
         </motion.div>
 
         <motion.div
@@ -83,6 +92,7 @@ const Contact = () => {
             target="_blank"
             onSubmit={onSubmit}
             action="https://formsubmit.co/stasmasevych@gmail.com"
+            /* action="https://getform.io/f/a8e2021d-a0e2-404c-bd75-b6db68e22d87" */
             method="POST"
           >
             <input

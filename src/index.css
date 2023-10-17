@@ -8,12 +8,13 @@ html,
 body {
   overflow-x: hidden;
   overflow-y: auto;
+  background-color: #010026; /* added for Message */
 }
 #root,
 .app {
   height: 100%;
   max-width: 100%;
-  background-color: #010026;
+  /* background-color: #010026; */ /* related to Message */
   @apply text-white;
 }
 
@@ -381,5 +382,30 @@ textarea::placeholder {
     line-height: 1.6;
     /* color: #6f6f6f; */
     color: #fff;
+  }
+}
+
+/* Message */
+
+.message {
+  height: 100%;
+  max-width: 100%;
+  /* background-color: #010026; */
+}
+
+.message__title {
+  padding-top: 200px;
+  font-size: 4rem;
+  color: #20c20e;
+  text-align: center;
+  font-weight: 600;
+}
+
+@media (max-width: 575.98px) {
+  .message__title {
+    font-size: 2rem;
+    color: #20c20e;
+    text-align: center;
+    font-weight: 600;
   }
 }
