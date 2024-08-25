@@ -23,7 +23,7 @@ const SocialMediaIcons = () => {
       >
         <SocialIcon
           network="instagram"
-          url="https://www.tiktok.com/@xomaa666"
+          url="https://www.instagram.com/lollipop_beauty_uty/"
           style={{ height: 46, width: 46 }}
         />
       </div>

@@ -37,13 +37,13 @@ function Prices() {
                 </p>
               </li>
             </ul>
-            <AnchorLink
+            <a
               className="block rounded-full bg-gradient-rainblue py-3 px-7 text-center text-xl font-semibold text-deep-blue transition duration-500
               hover:bg-blue hover:text-white"
-              href="#payment"
+              href="https://t.me/homushkaa"
             >
-              Придбати курс
-            </AnchorLink>
+              Замовити курс
+            </a>
           </div>
           <div class="pricing-plan pricing-plan--complete">
             <header className="pricing-plan__header header-pricing-plan">
@@ -77,13 +77,13 @@ function Prices() {
                 </p>
               </li>
             </ul>
-            <AnchorLink
+            <a
               className="block rounded-full bg-gradient-rainblue py-3 px-7 text-center text-xl font-semibold text-deep-blue transition duration-500
               hover:bg-blue hover:text-white"
-              href="#payment"
+              href="https://t.me/homushkaa"
             >
-              Придбати курс
-            </AnchorLink>
+              Замовити курс
+            </a>
           </div>
           <div class="pricing-plan pricing-plan--complete">
             <header className="pricing-plan__header header-pricing-plan">
@@ -171,13 +171,13 @@ function Prices() {
                 </p>
               </li>
             </ul>
-            <AnchorLink
+            <a
               className="block rounded-full bg-gradient-rainblue py-3 px-7 text-center text-xl font-semibold text-deep-blue transition duration-500
               hover:bg-blue hover:text-white"
-              href="#payment"
+              href="https://t.me/homushkaa"
             >
-              Придбати послугу
-            </AnchorLink>
+              Замовити послугу
+            </a>
           </div>
           <div class="pricing-plan pricing-plan--complete">
             <header className="pricing-plan__header header-pricing-plan">
@@ -236,13 +236,13 @@ function Prices() {
                 </p>
               </li>
             </ul>
-            <AnchorLink
+            <a
               className="block rounded-full bg-gradient-rainblue py-3 px-7 text-center text-xl font-semibold text-deep-blue transition duration-500
               hover:bg-blue hover:text-white"
-              href="#payment"
+              href="https://t.me/homushkaa"
             >
-              Придбати рекламу
-            </AnchorLink>
+              Замовити рекламу
+            </a>
           </div>
         </div>
       </div>

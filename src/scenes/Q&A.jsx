@@ -87,7 +87,7 @@ function QuestionsAndAnswers() {
               hover:bg-blue hover:text-white xxs:w-2/3 sm:w-2/6"
           href="#payment"
         >
-          Придбати курс
+          Замовити курс
         </AnchorLink>
       </motion.div>
     </section>

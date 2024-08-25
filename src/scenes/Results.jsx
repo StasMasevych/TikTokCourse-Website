@@ -441,7 +441,7 @@ const Results = () => {
               duration-500 hover:bg-blue hover:text-white xxs:w-2/3 sm:w-2/6"
           href="#ціни"
         >
-          Придбати курс
+          Замовити курс
         </AnchorLink>
       </motion.div>
     </section>

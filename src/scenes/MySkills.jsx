@@ -168,7 +168,7 @@ const MySkills = () => {
           href="#ціни"
           text-xl
         >
-          Придбати курс
+          Замовити курс
         </AnchorLink>
       </motion.div>
     </section>
