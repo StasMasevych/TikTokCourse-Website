@@ -113,8 +113,8 @@ body {
   background-color: #ff45a4;
   padding: 32px;
   border-radius: 50px;
-  height: 14vh;
-  width: 20vw;
+  height: 18vh;
+  width: 22vw;
 }
 
 .course__item:hover {
@@ -128,7 +128,7 @@ body {
     justify-content: center;
     margin: 16px 0;
     height: 18vh;
-    width: 26vw;
+    width: 22vw;
   }
 }
 

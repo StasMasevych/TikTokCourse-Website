@@ -86,7 +86,7 @@ export default function MyCourse() {
             }}
           >
             <div className="course__item">
-              Скільки зарлбляють тіктокери? Де і як мене знайдуть замовники і зо
+              Скільки заробляють тіктокери? Де і як мене знайдуть замовники і що
               далі робити? 💰
             </div>
           </motion.div>
@@ -131,7 +131,9 @@ export default function MyCourse() {
               visible: { opacity: 1, scale: 1 },
             }}
           >
-            <div className="course__item">"Секретний" час активності ⌛️ </div>
+            <div className="course__item">
+              "Секретний" час активності ⌛️ Так він є! Хто би що не говорив😌{' '}
+            </div>
           </motion.div>
           <motion.div
             /* className="w-1/3" */
@@ -187,7 +189,9 @@ export default function MyCourse() {
               visible: { opacity: 1, scale: 1 },
             }}
           >
-            <div className="course__item">Вся правда про тіньовий бан 🫢</div>
+            <div className="course__item">
+              Покрокова інструкція як вийти з тіньового бану?😫
+            </div>
           </motion.div>
           <motion.div
             /* className="w-1/3" */
@@ -201,7 +205,7 @@ export default function MyCourse() {
             }}
           >
             <div className="course__item">
-              15 типів відео, які завжди в РЕК з 0 🚀
+              40 типів відео, які завжди в РЕК з 0 🚀
             </div>
           </motion.div>
           <motion.div
@@ -232,6 +236,49 @@ export default function MyCourse() {
           >
             <div className="course__item">
               Як повернути старому аккаунту бомбезний актив! 😮
+            </div>
+          </motion.div>
+          <motion.div
+            /* className="w-1/3" */
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ duration: 0.6 }}
+            variants={{
+              hidden: { opacity: 0, scale: 0.8 },
+              visible: { opacity: 1, scale: 1 },
+            }}
+          >
+            <div className="course__item">
+              Як вийти з воронки 500 переглядів?🙏🏻
+            </div>
+          </motion.div>
+          <motion.div
+            /* className="w-1/3" */
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ duration: 0.6 }}
+            variants={{
+              hidden: { opacity: 0, scale: 0.8 },
+              visible: { opacity: 1, scale: 1 },
+            }}
+          >
+            <div className="course__item">Як заробити на перших відео?💸</div>
+          </motion.div>
+          <motion.div
+            /* className="w-1/3" */
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ duration: 0.6 }}
+            variants={{
+              hidden: { opacity: 0, scale: 0.8 },
+              visible: { opacity: 1, scale: 1 },
+            }}
+          >
+            <div className="course__item">
+              Як вийти з 0грн в 2000$ на місяць лише за пів року?💰
             </div>
           </motion.div>
         </div>
