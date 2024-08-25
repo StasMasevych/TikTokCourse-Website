@@ -4,6 +4,9 @@ module.exports = {
   mode: 'jit',
   theme: {
     extend: {
+      borderRadius: {
+        custom: '18px', // Add a custom name and value
+      },
       colors: {
         'deep-blue': '#010026',
         blue: '#2CBCE9',

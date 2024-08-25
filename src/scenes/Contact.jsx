@@ -81,7 +81,7 @@ const Contact = () => {
             method="POST"
           >
             <input
-              className="w-full bg-blue p-3 font-semibold"
+              className="rounded-custom  w-full bg-blue p-3 font-semibold"
               type="text"
               placeholder="Ім'я"
               {...register('name', {
@@ -97,7 +97,7 @@ const Contact = () => {
             )}
 
             <input
-              className="mt-5 w-full bg-blue p-3 font-semibold"
+              className="rounded-custom mt-5 w-full bg-blue p-3 font-semibold"
               type="email"
               placeholder="Email"
               {...register('email', {
@@ -113,7 +113,7 @@ const Contact = () => {
             )}
 
             <PhoneInput
-              className="mt-5 w-full bg-blue p-3 font-semibold"
+              className="rounded-custom mt-5 w-full bg-blue p-3 font-semibold"
               /* type="number" */
               defaultCountry="UA"
               placeholder="Номер телефону"
@@ -130,9 +130,9 @@ const Contact = () => {
             )}
 
             <textarea
-              className="mt-5 w-full bg-blue p-3 font-semibold"
+              className="rounded-custom mt-5 w-full bg-blue p-3 font-semibold"
               name="message"
-              placeholder="Опишіть Ваше питання з якого потрібна консультація"
+              placeholder="Залиште нікнейм вашого тіктоку. Пропишіть своїми словами в чому проблема профілю на вашу думку та головне до якого результату бажаєте прийти ❤️"
               rows="4"
               cols="50"
               {...register('message', {
@@ -150,7 +150,7 @@ const Contact = () => {
             )}
 
             <button
-              className="mt-5 bg-yellow p-5 font-semibold text-deep-blue transition duration-500 hover:bg-red hover:text-white"
+              className="rounded-custom mt-5 bg-yellow p-5 font-semibold text-deep-blue transition duration-500 hover:bg-red hover:text-white"
               type="submit"
             >
               ВІДПРАВИТИ
