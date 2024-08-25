@@ -24,7 +24,7 @@ function Prices() {
                 </h3>
                 <span>Standard 🔥</span>
               </div>
-              <p className="header-pricing-plan__price">4.999грн</p>
+              <p className="header-pricing-plan__price">4 999грн</p>
               <p className="header-pricing-plan__paragraph">Що включає курс</p>
             </header>
             <ul className="pricing-plan__list list-pricing-plan">
@@ -90,7 +90,7 @@ function Prices() {
                 </h3>
                 <span>VIP 🔥</span>
               </div>
-              <p className="header-pricing-plan__price">9.999грн</p>
+              <p className="header-pricing-plan__price">9 999грн</p>
               <p className="header-pricing-plan__paragraph">Що включає курс</p>
             </header>
             <ul className="pricing-plan__list list-pricing-plan">
@@ -123,28 +123,37 @@ function Prices() {
           <div class="pricing-plan pricing-plan--complete">
             <header className="pricing-plan__header header-pricing-plan">
               <div className="header-pricing-plan__title-block">
-                <h3 className="header-pricing-plan__title">
+                <h3 className="header-pricing-plan__title text-center">
                   Ведення ТікТоку повністю під 🔑
                   <br />
                 </h3>
                 <span> Особисто мною 😎 </span>
               </div>
-              <p className="header-pricing-plan__price">5000 грн</p>
-              <p className="header-pricing-plan__paragraph">
-                Що включає ведення
+              <p className="header-pricing-plan__price text-center">
+                2 000-3 000грн/ 1 відео
               </p>
             </header>
             <ul className="pricing-plan__list list-pricing-plan">
               <li className="list-pricing-plan__item item-list-pricing-plan">
                 <span className="item-list-pricing-plan__icon">✅</span>
                 <p className="item-list-pricing-plan__text">
-                  гарантія переглядів 30.000+ на кожному відео
+                  оплата лише за відео у рек🔥 з перших відео😈 *контент, який
+                  набрав менше 10.000 переглядів залишається у подарунок🎁
                 </p>
               </li>
               <li className="list-pricing-plan__item item-list-pricing-plan">
                 <span className="item-list-pricing-plan__icon">✅</span>
                 <p className="item-list-pricing-plan__text">
-                  створення та/або правильне оформлення профілю
+                  отримуєте значно більше контенту, ніж купуєте🔥 *для розгону
+                  активності та особливо з 0 треба буде більше відео, більше
+                  контенту🔥
+                </p>
+              </li>
+              <li className="list-pricing-plan__item item-list-pricing-plan">
+                <span className="item-list-pricing-plan__icon">✅</span>
+                <p className="item-list-pricing-plan__text">
+                  оформлення профілю/ реоформлення профілю впродовж співпраці за
+                  потребою{' '}
                 </p>
               </li>
               <li className="list-pricing-plan__item item-list-pricing-plan">
@@ -154,13 +163,13 @@ function Prices() {
               <li className="list-pricing-plan__item item-list-pricing-plan">
                 <span className="item-list-pricing-plan__icon">✅</span>
                 <p className="item-list-pricing-plan__text">
-                  якісна камера: IPhone 13 Pro Max
+                  камера: IPhone 13 Pro Max
                 </p>
               </li>
               <li className="list-pricing-plan__item item-list-pricing-plan">
                 <span className="item-list-pricing-plan__icon">✅</span>
                 <p className="item-list-pricing-plan__text">
-                  ідеї/ сценарії /пошук трендів
+                  ідеї/ сценарії /пошук трендів{' '}
                 </p>
               </li>
               <li className="list-pricing-plan__item item-list-pricing-plan">
@@ -175,13 +184,15 @@ function Prices() {
                 <span className="item-list-pricing-plan__icon">✅</span>
                 <p className="item-list-pricing-plan__text">
                   підбір/ пошук/ домовленість з моделями/ акторами/ медія за
-                  потреби
+                  необхідності
                 </p>
               </li>
               <li className="list-pricing-plan__item item-list-pricing-plan">
                 <span className="item-list-pricing-plan__icon">✅</span>
                 <p className="item-list-pricing-plan__text">
-                  також моя участь у відео, як моделі/ актора/ популяріті
+                  також моя участь у відео, як моделі/актриси(за освітою я
+                  актриса🙂)та впізнаваного тіктокера *відео зі мною завжди
+                  набирають більше🔥
                 </p>
               </li>
               <li className="list-pricing-plan__item item-list-pricing-plan">
@@ -195,15 +206,20 @@ function Prices() {
               <li className="list-pricing-plan__item item-list-pricing-plan">
                 <span className="item-list-pricing-plan__icon">✅</span>
                 <p className="item-list-pricing-plan__text">
-                  зв’язок 24/7 мо всім питанням
+                  можливий виїзд на локації *сплачується окремо
                 </p>
               </li>
               <li className="list-pricing-plan__item item-list-pricing-plan">
                 <span className="item-list-pricing-plan__icon">✅</span>
                 <p className="item-list-pricing-plan__text">
-                  можливий виїзд на локацію(додаткова оплата 🙏🏻) Ви платите
-                  тільки за РЕЗУЛЬТАТ! 🔥 Ціна: 3.000₴ - 1 відео (перші 10
-                  відео) Надалі 2.000₴ - 1 відео
+                  можлива зйомка на студії + проф.світло + проф. відеокамера
+                </p>
+              </li>
+              <li className="list-pricing-plan__item item-list-pricing-plan">
+                <span className="item-list-pricing-plan__icon">✅</span>
+                <p className="item-list-pricing-plan__text">
+                  постійний звʼязок з вами та виконання ваших запитів
+                  (враховуючи алгоритм тіктоку) у домовлені дедлайни
                 </p>
               </li>
             </ul>
@@ -215,15 +231,18 @@ function Prices() {
               Замовити послугу
             </a>
           </div>
+
           <div class="pricing-plan pricing-plan--complete">
             <header className="pricing-plan__header header-pricing-plan">
               <div className="header-pricing-plan__title-block">
-                <h3 className="header-pricing-plan__title">
+                <h3 className="header-pricing-plan__title text-center">
                   Реклама у ТікТок/Інстаграм ⭐ <br />
                 </h3>
-                <span>Гарантія переглядів: 200.000 людей 🔥</span>
+                <span className="text-center">
+                  Гарантія переглядів: 100 000 людей 🔥
+                </span>
               </div>
-              <p className="header-pricing-plan__price">від 3000 грн</p>
+              <p className="header-pricing-plan__price ">від 2 000 грн</p>
               <p className="header-pricing-plan__paragraph">
                 {' '}
                 Можливі варіанти
@@ -233,35 +252,39 @@ function Prices() {
               <li className="list-pricing-plan__item item-list-pricing-plan">
                 <span className="item-list-pricing-plan__icon">✅</span>
                 <p className="item-list-pricing-plan__text">
-                  мінімум 1 відео - 6.000грн Виїзд на відкриття/ огляд
-                  магазину(салону, тощо) - 10.000₴ + дорога 🤍 Інстаграм: 3-4
-                  сторіс: 3.000грн (з підводками)
-                </p>
-              </li>
-              <li className="list-pricing-plan__item item-list-pricing-plan">
-                <span className="item-list-pricing-plan__icon">✅</span>
-                <p className="item-list-pricing-plan__text">Пост: 5.000грн</p>
-              </li>
-              <li className="list-pricing-plan__item item-list-pricing-plan">
-                <span className="item-list-pricing-plan__icon">✅</span>
-                <p className="item-list-pricing-plan__text">Reels: 6.000грн</p>
-              </li>
-              <li className="list-pricing-plan__item item-list-pricing-plan">
-                <span className="item-list-pricing-plan__icon">✅</span>
-                <p className="item-list-pricing-plan__text">
-                  Фото-макет: 1.500грн
+                  Фото-макет: 2 000грн
                 </p>
               </li>
               <li className="list-pricing-plan__item item-list-pricing-plan">
                 <span className="item-list-pricing-plan__icon">✅</span>
                 <p className="item-list-pricing-plan__text">
-                  Відео-макет: 1600грн
+                  Відео-макет: 3 000грн
                 </p>
               </li>
               <li className="list-pricing-plan__item item-list-pricing-plan">
                 <span className="item-list-pricing-plan__icon">✅</span>
                 <p className="item-list-pricing-plan__text">
-                  Виїзд на відкриття: 5.000грн + дорога🫶
+                  1 сторіс: 1 500грн, 3 сторіс - 2 500грн *враховуючи «підігрів»
+                </p>
+              </li>
+              <li className="list-pricing-plan__item item-list-pricing-plan">
+                <span className="item-list-pricing-plan__icon">✅</span>
+                <p className="item-list-pricing-plan__text">
+                  Безліміт сторіс (у день реклами) - 5 000грн
+                </p>
+              </li>
+              <li className="list-pricing-plan__item item-list-pricing-plan">
+                <span className="item-list-pricing-plan__icon">✅</span>
+                <p className="item-list-pricing-plan__text">Пост: 4 000грн</p>
+              </li>
+              <li className="list-pricing-plan__item item-list-pricing-plan">
+                <span className="item-list-pricing-plan__icon">✅</span>
+                <p className="item-list-pricing-plan__text">Reels: 6 000грн</p>
+              </li>
+              <li className="list-pricing-plan__item item-list-pricing-plan">
+                <span className="item-list-pricing-plan__icon">✅</span>
+                <p className="item-list-pricing-plan__text">
+                  Виїзд на відкриття/ локацію/ захід: 12 000грн
                 </p>
               </li>
               <li className="list-pricing-plan__item item-list-pricing-plan">
