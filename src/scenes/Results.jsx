@@ -439,7 +439,7 @@ const Results = () => {
         <AnchorLink
           className="mt-10 block rounded-full bg-gradient-rainblue py-3 px-7 text-center text-xl font-semibold text-deep-blue transition
               duration-500 hover:bg-blue hover:text-white xxs:w-2/3 sm:w-2/6"
-          href="#payment"
+          href="#ціни"
         >
           Придбати курс
         </AnchorLink>
