@@ -6,8 +6,6 @@ import { motion } from 'framer-motion';
 import 'react-phone-number-input/style.css';
 import PhoneInput from 'react-phone-number-input';
 
-import contactImage from '../assets/contact_image.jpg';
-
 const Contact = () => {
   const {
     register,
@@ -67,14 +65,11 @@ const Contact = () => {
           }}
           className="flex basis-1/2 justify-center"
         >
-          <img src="../assets/contact-image.jpeg" alt="contact" />
-          <div className="">
-            <img
-              /* className="h-[26rem] w-[20rem]" */
-              src={contactImage}
-              alt="contact"
-            />
-          </div>
+          <img
+            className="contact__image"
+            src="../assets/DALL·E 2024-08-25 13.08.35 - A realistic image for a TikTok course landing page featuring a fashionable young woman in a cool, modern flat. The woman is using an iPhone to create .webp"
+            alt="contact"
+          />
         </motion.div>
 
         <motion.div

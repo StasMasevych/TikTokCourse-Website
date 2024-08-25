@@ -235,6 +235,10 @@ textarea::placeholder {
   opacity: 0.5; /* Firefox */
 }
 
+.contact__image {
+  border-radius: 18px;
+}
+
 /* Prices */
 
 .prices__grid {
