@@ -1,6 +1,8 @@
 import SocialMediaIcons from '../components/SocialMediaIcons';
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
+
   return (
     <footer className="h-64 bg-red pt-10">
       <div className="mx-auto w-10/12">
@@ -11,7 +13,7 @@ const Footer = () => {
             ТікТок Курс
           </p>
           <p className="text-md font-playfair text-yellow">
-            ©2023 ТікТок Курс. Всі права захищено
+            ©{currentYear} ТікТок Курс. Всі права захищено
           </p>
         </div>
       </div>

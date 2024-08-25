@@ -239,7 +239,7 @@ const Results = () => {
       jsConfetti.addConfetti({
         confettiRadius: 1,
         confettiColors: ['#000', 'hotpink', 'gold'],
-        confettiNumber: 100,
+        confettiNumber: 500,
         emojis: ['🎉', '🔥', '💥', '✨', '💫', '💜'],
         emojiSize: 100,
       });
