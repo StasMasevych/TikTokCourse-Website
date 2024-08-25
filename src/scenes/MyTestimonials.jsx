@@ -28,7 +28,7 @@ const MyTestimonials = () => {
       {/* TESTIMONIALS */}
       <div className="gap-8 md:flex md:flex-wrap md:justify-between">
         <motion.div
-          className="relative mx-auto mt-48 flex h-[350px] basis-1/4 flex-col justify-end
+          className="rounded-custom relative mx-auto mt-48 flex h-[350px] basis-1/4 flex-col justify-end
             bg-blue before:absolute before:left-1/2 before:-ml-[110px] before:content-person1 xxs:p-12 xxs:before:top-[-140px] md:p-8 md:before:top-[-170px] "
           initial="hidden"
           whileInView="visible"
@@ -49,7 +49,7 @@ const MyTestimonials = () => {
         </motion.div>
 
         <motion.div
-          className="relative mx-auto mt-48 flex h-[350px] basis-1/4 flex-col justify-end bg-red
+          className="rounded-custom relative mx-auto mt-48 flex h-[350px] basis-1/4 flex-col justify-end bg-red
             before:absolute before:left-1/2 before:-ml-[110px] before:content-person2 xxs:p-16 xxs:before:top-[-140px] md:p-14 md:before:top-[-170px] "
           initial="hidden"
           whileInView="visible"
@@ -68,7 +68,7 @@ const MyTestimonials = () => {
         </motion.div>
 
         <motion.div
-          className="relative mx-auto mt-48 flex h-[350px] basis-1/4 flex-col justify-end bg-yellow
+          className="rounded-custom relative mx-auto mt-48 flex h-[350px] basis-1/4 flex-col justify-end bg-yellow
             before:absolute before:left-1/2 before:-ml-[110px] before:content-person3 xxs:p-12 xxs:before:top-[-140px] md:p-11 md:before:top-[-170px] "
           initial="hidden"
           whileInView="visible"
@@ -88,7 +88,7 @@ const MyTestimonials = () => {
         </motion.div>
 
         <motion.div
-          className="relative mx-auto mt-48 flex h-[350px] basis-1/4 flex-col justify-end bg-blue
+          className="rounded-custom relative mx-auto mt-48 flex h-[350px] basis-1/4 flex-col justify-end bg-blue
             before:absolute before:left-1/2 before:-ml-[110px] before:content-person4 xxs:p-2 xxs:before:top-[-140px] md:p-6 md:before:top-[-170px] "
           initial="hidden"
           whileInView="visible"
@@ -110,8 +110,8 @@ const MyTestimonials = () => {
         </motion.div>
 
         <motion.div
-          className="relative mx-auto mt-48 flex h-[350px] basis-1/4 flex-col justify-end bg-red
-            before:absolute before:left-1/2 before:-ml-[110px] before:content-person5 xxs:p-2 xxs:before:top-[-140px] md:p-2 md:before:top-[-170px] "
+          className="rounded-custom relative mx-auto mt-48 flex h-[350px] basis-1/4 flex-col justify-end
+            bg-red before:absolute before:left-1/2 before:-ml-[110px] before:content-person5 xxs:p-2 xxs:before:top-[-140px] md:p-2 md:before:top-[-170px]"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
@@ -133,7 +133,7 @@ const MyTestimonials = () => {
         </motion.div>
 
         <motion.div
-          className="relative mx-auto mt-48 flex h-[350px] basis-1/4 flex-col justify-end bg-yellow
+          className="rounded-custom relative mx-auto mt-48 flex h-[350px] basis-1/4 flex-col justify-end bg-yellow
             before:absolute before:left-1/2 before:-ml-[110px] before:content-person6 xxs:p-2 xxs:before:top-[-140px] md:p-6 md:before:top-[-170px] "
           initial="hidden"
           whileInView="visible"
