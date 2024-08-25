@@ -132,7 +132,7 @@ const Contact = () => {
             <textarea
               className="rounded-custom mt-5 w-full bg-blue p-3 font-semibold"
               name="message"
-              placeholder="Залиште нікнейм вашого тіктоку. Пропишіть своїми словами в чому проблема профілю на вашу думку та головне до якого результату бажаєте прийти ❤️"
+              placeholder="Пропишіть своїми словами в чому проблема профілю на вашу думку та головне до якого результату бажаєте прийти ❤️"
               rows="4"
               cols="50"
               {...register('message', {
