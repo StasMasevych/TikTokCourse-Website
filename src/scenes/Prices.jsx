@@ -14,6 +14,7 @@ function Prices() {
             <LineGradient width="w-2/3" />
           </div>
         </div>
+        {/* List */}
         <div className="prices__grid grid-prices">
           <div class="pricing-plan pricing-plan--complete">
             <header className="pricing-plan__header header-pricing-plan">
@@ -23,17 +24,52 @@ function Prices() {
                 </h3>
                 <span>Standard 🔥</span>
               </div>
-              <p className="header-pricing-plan__price">2000 грн</p>
+              <p className="header-pricing-plan__price">4.999грн</p>
               <p className="header-pricing-plan__paragraph">Що включає курс</p>
             </header>
             <ul className="pricing-plan__list list-pricing-plan">
               <li className="list-pricing-plan__item item-list-pricing-plan">
                 <span className="item-list-pricing-plan__icon">✅</span>
                 <p className="item-list-pricing-plan__text">
-                  68 авторських сторінок з найефективнішими алгоритмами,
-                  лайфхаками, особистими фішками потрапляння з кожним відео у
-                  РЕК з 0 ❗️ та монетизації 💸 60 сценаріїв від мене в твій
-                  профіль, які будуть в РЕК 🔥 4.100₴ ⭐
+                  68 авторських сторінок теорія/практика/монетизація🔥:з
+                  найефективнішим алгоритмом, всіма моїми лайфхаками та
+                  особистими фішками потрапляння з кожним відео у РЕК з 0 ❗️
+                </p>
+              </li>
+              <li className="list-pricing-plan__item item-list-pricing-plan">
+                <span className="item-list-pricing-plan__icon">✅</span>
+                <p className="item-list-pricing-plan__text">
+                  ~10 способів монетизації 💸
+                </p>
+              </li>
+              <li className="list-pricing-plan__item item-list-pricing-plan">
+                <span className="item-list-pricing-plan__icon">✅</span>
+                <p className="item-list-pricing-plan__text">
+                  40 форматів відео, які залетять з 0❗️
+                </p>
+              </li>
+              <li className="list-pricing-plan__item item-list-pricing-plan">
+                <span className="item-list-pricing-plan__icon">✅</span>
+                <p className="item-list-pricing-plan__text">
+                  схема набору 20.000 підписників за 2 відео!💥
+                </p>
+              </li>
+              <li className="list-pricing-plan__item item-list-pricing-plan">
+                <span className="item-list-pricing-plan__icon">✅</span>
+                <p className="item-list-pricing-plan__text">
+                  схема виходу з воронки 500 переглядів
+                </p>
+              </li>
+              <li className="list-pricing-plan__item item-list-pricing-plan">
+                <span className="item-list-pricing-plan__icon">✅</span>
+                <p className="item-list-pricing-plan__text">
+                  схема виходу з тіньового бану
+                </p>
+              </li>
+              <li className="list-pricing-plan__item item-list-pricing-plan">
+                <span className="item-list-pricing-plan__icon">✅</span>
+                <p className="item-list-pricing-plan__text">
+                  просування хештегами🔥 та багато іншого!💥💥💥
                 </p>
               </li>
             </ul>
@@ -45,6 +81,7 @@ function Prices() {
               Замовити курс
             </a>
           </div>
+
           <div class="pricing-plan pricing-plan--complete">
             <header className="pricing-plan__header header-pricing-plan">
               <div className="header-pricing-plan__title-block">
@@ -53,27 +90,24 @@ function Prices() {
                 </h3>
                 <span>VIP 🔥</span>
               </div>
-              <p className="header-pricing-plan__price">5000 грн</p>
+              <p className="header-pricing-plan__price">9.999грн</p>
               <p className="header-pricing-plan__paragraph">Що включає курс</p>
             </header>
             <ul className="pricing-plan__list list-pricing-plan">
               <li className="list-pricing-plan__item item-list-pricing-plan">
                 <span className="item-list-pricing-plan__icon">✅</span>
                 <p className="item-list-pricing-plan__text">
-                  68 авторських сторінок з найефективнішими алгоритмами,
-                  лайфхаками, особистими фішками потрапляння з кожним відео у
-                  РЕК з 0 ❗️ та монетизації 💸 60 сценаріїв від мене в твій
-                  профіль, які будуть в РЕК 🔥 4.100₴ ⭐
+                  Все, що є у Стандарт Курсі🔥
                 </p>
               </li>
               <li className="list-pricing-plan__item item-list-pricing-plan">
                 <span className="item-list-pricing-plan__icon">✅</span>
                 <p className="item-list-pricing-plan__text">
-                  Моє кураторство Вашим профілем 3 місяці 🔥 Я особисто
-                  допомагаю доводити кожне відео у РЕК 😎 Аналізуємо кожне відео
-                  кожен день 🔥 Поки не дійдемо бажаного результату в розвитку і
-                  заробітку не закінчуємо співпрацю ❤️‍🔥 6.300₴ ЗНИЖКА 🔥 10.000₴
-                  перечеркнуто
+                  ❗️УВАГА❗️👉 Моє кураторство Вашим профілем ДО РЕЗУЛЬТАТУ! 🔥
+                  без обмежень у часі😌 і так - це ексклюзив! Я особисто
+                  допомагаю доводити кожне ваше відео у рек 😎 Аналізуємо кожне
+                  відео кожен день 🔥 Поки не дійдемо бажаного результату в
+                  розвитку і заробітку - не закінчуємо співпрацю!❤️‍🔥
                 </p>
               </li>
             </ul>
@@ -85,13 +119,15 @@ function Prices() {
               Замовити курс
             </a>
           </div>
+
           <div class="pricing-plan pricing-plan--complete">
             <header className="pricing-plan__header header-pricing-plan">
               <div className="header-pricing-plan__title-block">
                 <h3 className="header-pricing-plan__title">
-                  Ведення ТікТоку під ключ 🔑 <br />
+                  Ведення ТікТоку повністю під 🔑
+                  <br />
                 </h3>
-                <span> Відео, які набрали 30.000+ переглядів 🔥</span>
+                <span> Особисто мною 😎 </span>
               </div>
               <p className="header-pricing-plan__price">5000 грн</p>
               <p className="header-pricing-plan__paragraph">

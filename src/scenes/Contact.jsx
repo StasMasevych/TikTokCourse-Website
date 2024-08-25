@@ -78,13 +78,12 @@ const Contact = () => {
             target="_blank"
             onSubmit={onSubmit}
             action="https://formspree.io/f/mjkbjqza"
-            /* action="https://formsubmit.co/lerukhin@gmail.com" */
             method="POST"
           >
             <input
               className="w-full bg-blue p-3 font-semibold"
               type="text"
-              placeholder="Ім'я та прізвище"
+              placeholder="Ім'я"
               {...register('name', {
                 required: true,
                 maxLength: 100,
