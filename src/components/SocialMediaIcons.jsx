@@ -27,9 +27,8 @@ const SocialMediaIcons = () => {
           style={{ height: 46, width: 46 }}
         />
       </div>
-      <div
+      {/* <div
         className="transition duration-500 hover:opacity-50"
-        /* href="https://www.facebook.com" */
         target="_blank"
         rel="noreferrer"
       >
@@ -38,7 +37,7 @@ const SocialMediaIcons = () => {
           url="https://www.tiktok.com/@xomaa666"
           style={{ height: 46, width: 46 }}
         />
-      </div>
+      </div> */}
       <div
         className="transition duration-500 hover:opacity-50"
         /*  href="https://www.instagram.com" */
@@ -47,7 +46,7 @@ const SocialMediaIcons = () => {
       >
         <SocialIcon
           network="telegram"
-          url="https://www.tiktok.com/@xomaa666"
+          url="https://t.me/homushkaa"
           style={{ height: 46, width: 46 }}
         />
       </div>

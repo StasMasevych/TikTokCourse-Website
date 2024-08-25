@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 
 import 'react-phone-number-input/style.css';
 import PhoneInput from 'react-phone-number-input';
+import contactImage from '../assets/DALL·E 2024-08-25 19.34.33 - A realistic and vibrant image designed for SEO and social media meta tags related to a TikTok course. The scene features a happy, stylish young woman .webp';
 
 const Contact = () => {
   const {
@@ -65,11 +66,7 @@ const Contact = () => {
           }}
           className="flex basis-1/2 justify-center"
         >
-          <img
-            className="contact__image"
-            src="../assets/DALL·E 2024-08-25 13.08.35 - A realistic image for a TikTok course landing page featuring a fashionable young woman in a cool, modern flat. The woman is using an iPhone to create .webp"
-            alt="contact"
-          />
+          <img className="contact__image" src={contactImage} alt="contact" />
         </motion.div>
 
         <motion.div
