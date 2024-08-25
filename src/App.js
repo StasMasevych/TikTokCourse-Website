@@ -7,6 +7,7 @@ import MyCourse from './scenes/MyCourse';
 import LineGradient from './components/LineGradient';
 import Projects from './scenes/Projects';
 import Contact from './scenes/Contact';
+/* import Contact2 from './scenes/Contact2'; */
 import Footer from './scenes/Footer';
 import useMediaQuery from './hooks/useMediaQuery';
 import { useEffect, useState } from 'react';
@@ -127,6 +128,7 @@ function App() {
           onViewportEnter={() => setSelectedPage('Контакт')}
         >
           <Contact />
+          {/*  <Contact2 /> */}
         </motion.div>
       </div>
       <Footer />

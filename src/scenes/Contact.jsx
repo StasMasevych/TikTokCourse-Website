@@ -6,6 +6,7 @@ import { motion } from 'framer-motion';
 import 'react-phone-number-input/style.css';
 import PhoneInput from 'react-phone-number-input';
 import contactImage from '../assets/DALL·E 2024-08-25 19.34.33 - A realistic and vibrant image designed for SEO and social media meta tags related to a TikTok course. The scene features a happy, stylish young woman .webp';
+import { useState } from 'react';
 
 const Contact = () => {
   const {
@@ -14,14 +15,9 @@ const Contact = () => {
     formState: { errors },
   } = useForm();
 
-  /*   const jsConfetti = new JSConfetti(); */
-
   const onSubmit = async (e) => {
     console.log('~ e', e);
-    /* fireConfetti(); */
-    /* jsConfetti.addConfetti({
-      emojis: ['🌈', '⚡️', '💥', '✨', '💫', '🌸'],
-    }); */
+
     const isValid = await trigger();
     if (!isValid) {
       e.preventDefault();
@@ -30,7 +26,6 @@ const Contact = () => {
 
   return (
     <section id="контакт" className="contact pt-18 pb-18 mb-10">
-      {/* HEADINGS */}
       <motion.div
         initial="hidden"
         whileInView="visible"
@@ -53,7 +48,6 @@ const Contact = () => {
         </div>
       </motion.div>
 
-      {/* FORM & IMAGE */}
       <div className="mt-5 gap-16 md:flex md:justify-between">
         <motion.div
           initial="hidden"
@@ -83,8 +77,8 @@ const Contact = () => {
           <form
             target="_blank"
             onSubmit={onSubmit}
-            action="https://formsubmit.co/lerukhin@gmail.com"
-            /* action="https://getform.io/f/a8e2021d-a0e2-404c-bd75-b6db68e22d87" */
+            action="https://formspree.io/f/mjkbjqza"
+            /* action="https://formsubmit.co/lerukhin@gmail.com" */
             method="POST"
           >
             <input
@@ -105,7 +99,7 @@ const Contact = () => {
 
             <input
               className="mt-5 w-full bg-blue p-3 font-semibold"
-              type="text"
+              type="email"
               placeholder="Email"
               {...register('email', {
                 required: true,
