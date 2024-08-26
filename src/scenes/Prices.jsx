@@ -146,7 +146,7 @@ function Prices() {
                 </div>
               </div> */}
               <div className="header-pricing-plan__price">
-                1-2 000грн/1 відео
+                3-4 000грн/1 відео
               </div>
             </header>
             <ul className="pricing-plan__list list-pricing-plan">
