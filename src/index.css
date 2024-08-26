@@ -394,6 +394,10 @@ textarea::placeholder {
 }
 
 @media (max-width: 575.98px) {
+  .pricing-plan--complete {
+    padding: 2rem;
+  }
+
   .header-pricing-plan__title {
     /* color: #cf711f; */
     color: #ff45a4;
