@@ -79,7 +79,7 @@ const MySkills = () => {
             {/* h-32 */}
             <div className="z-10">
               {/* <p className="font-playfair text-5xl font-semibold">01</p> */}
-              <p className="mt-3 font-playfair text-3xl font-semibold">
+              <p className="mt-3 font-playfair text-3xl font-semibold xxs:text-2xl">
                 💰 Заробіток з 0 грн до 2 000 $ за пів року
               </p>
             </div>
@@ -110,7 +110,7 @@ const MySkills = () => {
           <div className="h-62 relative">
             <div className="z-10">
               {/* <p className="font-playfair text-5xl font-semibold">02</p> */}
-              <p className="mt-3 font-playfair text-3xl font-semibold">
+              <p className="mt-3 font-playfair text-3xl font-semibold xxs:text-2xl">
                 ⭐️ Співпраця з відомими брендами та медіа
               </p>
             </div>
@@ -139,7 +139,7 @@ const MySkills = () => {
           <div className="h-62 relative">
             <div className="z-10">
               {/* <p className="font-playfair text-5xl font-semibold">03</p> */}
-              <p className="mt-3 font-playfair text-3xl font-semibold">
+              <p className="mt-3 font-playfair text-3xl font-semibold xxs:text-2xl">
                 🥳 Впізнаваність та популярність
               </p>
             </div>
