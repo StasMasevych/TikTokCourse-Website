@@ -24,7 +24,10 @@ function Prices() {
                 </h3>
                 <span>Standard 🔥</span>
               </div>
-              <p className="header-pricing-plan__price">4 999грн</p>
+              <div className="header-pricing-plan__prices">
+                <div className="header-pricing-plan__price">4 999грн</div>
+                <div className="header-pricing-plan__price-prev">10 000грн</div>
+              </div>
               <p className="header-pricing-plan__paragraph">Що включає курс</p>
             </header>
             <ul className="pricing-plan__list list-pricing-plan">
@@ -90,7 +93,10 @@ function Prices() {
                 </h3>
                 <span>VIP 🔥</span>
               </div>
-              <p className="header-pricing-plan__price">9 999грн</p>
+              <div className="header-pricing-plan__prices">
+                <div className="header-pricing-plan__price">9 999грн</div>
+                <div className="header-pricing-plan__price-prev">20 000грн</div>
+              </div>
               <p className="header-pricing-plan__paragraph">Що включає курс</p>
             </header>
             <ul className="pricing-plan__list list-pricing-plan">
@@ -129,9 +135,14 @@ function Prices() {
                 </h3>
                 <span> Особисто мною 😎 </span>
               </div>
-              <p className="header-pricing-plan__price text-center">
-                2 000-3 000грн/ 1 відео
-              </p>
+              <div className="header-pricing-plan__prices">
+                <div className="header-pricing-plan__price">
+                  1-2 000грн/1 відео
+                </div>
+                <div className="header-pricing-plan__price-prev">
+                  4-5 000грн/1 відео
+                </div>
+              </div>
             </header>
             <ul className="pricing-plan__list list-pricing-plan">
               <li className="list-pricing-plan__item item-list-pricing-plan">
@@ -243,7 +254,12 @@ function Prices() {
                   Гарантія переглядів: 100 000 людей 🔥
                 </span>
               </div>
-              <p className="header-pricing-plan__price ">від 2 000 грн</p>
+              <div className="header-pricing-plan__prices">
+                <div className="header-pricing-plan__price">від 2 000 грн</div>
+                <div className="header-pricing-plan__price-prev">
+                  від 3 000 грн
+                </div>
+              </div>
               <p className="header-pricing-plan__paragraph">
                 {' '}
                 Можливі варіанти
