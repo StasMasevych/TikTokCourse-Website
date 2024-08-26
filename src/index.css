@@ -334,7 +334,8 @@ textarea::placeholder {
   font-size: 1rem;
   font-weight: 600;
   text-decoration: line-through;
-  color: #6a6f73;
+  /* color: #6a6f73; */
+  color: #c3cdd4;
 }
 
 .header-pricing-plan__paragraph {
@@ -401,9 +402,9 @@ textarea::placeholder {
     text-align: center;
   }
 
-  .item-list-pricing-plan__text {
+  /* .item-list-pricing-plan__text {
     font-size: 0.8rem;
-  }
+  } */
 
   .header-pricing-plan__title-block span {
     display: block;
@@ -423,12 +424,11 @@ textarea::placeholder {
     color: #fff;
   }
 
-  .header-pricing-plan__paragraph {
-    font-size: 12px;
+  /* .header-pricing-plan__paragraph {
+    font-size: 14px;
     line-height: 1.6;
-    /* color: #6f6f6f; */
     color: #fff;
-  }
+  } */
 }
 
 /* Message */
