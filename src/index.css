@@ -317,26 +317,25 @@ textarea::placeholder {
   color: #fff;
 }
 
-.header-pricing-plan__prices {
+/* .header-pricing-plan__prices {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-}
+} */
 
 .header-pricing-plan__price {
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: 600;
   /* color: #333; */
   color: #fff;
 }
 
-.header-pricing-plan__price-prev {
+/* .header-pricing-plan__price-prev {
   font-size: 1rem;
   font-weight: 600;
   text-decoration: line-through;
-  /* color: #6a6f73; */
   color: #c3cdd4;
-}
+} */
 
 .header-pricing-plan__paragraph {
   font-size: 16px;
@@ -369,13 +368,13 @@ textarea::placeholder {
 }
 
 @media (max-width: 991.98px) {
-  .header-pricing-plan__price,
+  /* .header-pricing-plan__price,
   .header-pricing-plan__price-prev {
     font-size: 0.8rem;
-  }
-  .header-pricing-plan__prices {
+  } */
+  /* .header-pricing-plan__prices {
     gap: 0.3rem;
-  }
+  } */
 }
 
 @media (max-width: 767.98px) {
@@ -387,10 +386,10 @@ textarea::placeholder {
     column-gap: 3.8rem;
     row-gap: 4.4rem;
   }
-  .header-pricing-plan__price,
+  /* .header-pricing-plan__price,
   .header-pricing-plan__price-prev {
     font-size: 0.8rem;
-  }
+  } */
 }
 
 @media (max-width: 575.98px) {
@@ -417,10 +416,10 @@ textarea::placeholder {
     font-size: 1rem;
     color: #fff;
   }
-  .header-pricing-plan__price,
+  /* .header-pricing-plan__price,
   .header-pricing-plan__price-prev {
     font-size: 0.7rem;
-  }
+  } */
 
   .header-pricing-plan__price {
     font-weight: 600;
