@@ -101,15 +101,6 @@ function App() {
           <MyTestimonials />
         </motion.div>
       </div>
-      <div className="mx-auto w-5/6">
-        <motion.div
-          margin="0 0 -200px 0"
-          amount="all"
-          onViewportEnter={() => setSelectedPage('Питання')}
-        >
-          <QuestionsAndAnswers />
-        </motion.div>
-      </div>
 
       <div className="mx-auto w-5/6">
         <motion.div
@@ -118,6 +109,16 @@ function App() {
           onViewportEnter={() => setSelectedPage('Ціни')}
         >
           <Prices />
+        </motion.div>
+      </div>
+
+      <div className="mx-auto w-5/6">
+        <motion.div
+          margin="0 0 -200px 0"
+          amount="all"
+          onViewportEnter={() => setSelectedPage('Питання')}
+        >
+          <QuestionsAndAnswers />
         </motion.div>
       </div>
 

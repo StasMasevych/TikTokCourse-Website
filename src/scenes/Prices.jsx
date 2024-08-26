@@ -5,7 +5,7 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
 function Prices() {
   return (
     <section id="ціни" className="pt-18">
-      <div className="prices">
+      <div className="prices pt-20">
         <div className="text-center">
           <p className="text font-playfair text-4xl font-semibold">
             <span className="text-red">ОБИРАЙ</span> ЗРУЧНИЙ ФОРМАТ
