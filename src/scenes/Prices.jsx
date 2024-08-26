@@ -213,6 +213,7 @@ function Prices() {
                 <span className="item-list-pricing-plan__icon">✅</span>
                 <p className="item-list-pricing-plan__text">
                   можлива зйомка на студії + проф.світло + проф. відеокамера
+                  (оплачується окремо)
                 </p>
               </li>
               <li className="list-pricing-plan__item item-list-pricing-plan">
