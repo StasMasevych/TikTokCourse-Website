@@ -1,28 +1,56 @@
-import LineGradient from '../components/LineGradient';
-import { useForm } from 'react-hook-form';
+import { useForm as useFormFormspree, ValidationError } from '@formspree/react';
 import { motion } from 'framer-motion';
-/* import JSConfetti from 'js-confetti'; */
-
+import LineGradient from '../components/LineGradient';
+import { FaTimes } from 'react-icons/fa';
+import { useForm } from 'react-hook-form';
 import 'react-phone-number-input/style.css';
 import PhoneInput from 'react-phone-number-input';
 import contactImage from '../assets/DALL·E 2024-08-25 19.34.33 - A realistic and vibrant image designed for SEO and social media meta tags related to a TikTok course. The scene features a happy, stylish young woman .webp';
 import { useState } from 'react';
 
-const Contact = () => {
+function ContactForm() {
+  /*  const [openModal, setOpenModal] = useState(true); */
+  const [show, onClose] = useState(true);
+
+  const [state, handleSubmit] = useFormFormspree('mjkbjqza');
   const {
     register,
     trigger,
     formState: { errors },
   } = useForm();
 
-  const onSubmit = async (e) => {
-    console.log('~ e', e);
+  /* function handleOnClose(e) {
+    e.preventDefault(); 
+    e.stopPropagation(); 
+    onClose(false);
+    window.location.reload();
+  } */
 
-    const isValid = await trigger();
-    if (!isValid) {
-      e.preventDefault();
-    }
-  };
+  if (state.succeeded) {
+    return (
+      <div className="modal" onClick={onClose}>
+        {show && (
+          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+            <div className="modal-header">
+              <h2 className="modal-title">Дякуємо!🥰</h2>
+              {/* <button onClick={handleOnClose} className="close-button">
+                &times;
+              </button> */}
+            </div>
+            <div className="modal-body">
+              <p>Реєстрація на безкоштовну консультацію активна💥</p>
+              <p>
+                Скоро ми з вами звʼяжемося та узгодимо зручний час для
+                проведення онлайн-зустрічі👩‍💻
+              </p>
+            </div>
+          </div>
+        )}
+      </div>
+    );
+
+    /* <p>Дякую за запис!🥰 До скорої зустрічі!🥳</p> */
+  }
 
   return (
     <section id="контакт" className="contact pt-18 pb-18 mb-10">
@@ -74,12 +102,7 @@ const Contact = () => {
           }}
           className="mt-10 basis-1/2 md:mt-0"
         >
-          <form
-            /* target="_blank" */
-            onSubmit={onSubmit}
-            action="https://formspree.io/f/mjkbjqza"
-            method="POST"
-          >
+          <form onSubmit={handleSubmit}>
             <input
               className="rounded-custom  w-full bg-blue p-3 font-semibold"
               type="text"
@@ -111,6 +134,12 @@ const Contact = () => {
                 {errors.email.type === 'pattern' && 'Invalid email address.'}
               </p>
             )}
+
+            {/* <ValidationError
+              prefix="Email"
+              field="email"
+              errors={state.errors}
+            /> */}
 
             <PhoneInput
               className="rounded-custom mt-5 w-full bg-blue p-3 font-semibold"
@@ -149,6 +178,12 @@ const Contact = () => {
               </p>
             )}
 
+            {/* <ValidationError
+              prefix="Message"
+              field="message"
+              errors={state.errors}
+            /> */}
+
             <button
               className="rounded-custom mt-5 bg-yellow p-5 font-semibold text-deep-blue transition duration-500 hover:bg-red hover:text-white"
               type="submit"
@@ -160,6 +195,6 @@ const Contact = () => {
       </div>
     </section>
   );
-};
+}
 
-export default Contact;
+export default ContactForm;

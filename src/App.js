@@ -6,7 +6,8 @@ import MyCourse from './scenes/MyCourse';
 /* import Test from "./scenes/Test"; */
 import LineGradient from './components/LineGradient';
 import Projects from './scenes/Projects';
-import Contact from './scenes/Contact';
+/* import Contact from './scenes/Contact'; */
+import ContactForm from './scenes/ContactFormspree';
 /* import Contact2 from './scenes/Contact2'; */
 import Footer from './scenes/Footer';
 import useMediaQuery from './hooks/useMediaQuery';
@@ -128,8 +129,8 @@ function App() {
           amount="all"
           onViewportEnter={() => setSelectedPage('Контакт')}
         >
-          <Contact />
-          {/*  <Contact2 /> */}
+          {/* <Contact /> */}
+          <ContactForm />
         </motion.div>
       </div>
       <Footer />
